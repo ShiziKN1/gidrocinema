@@ -19,3 +19,20 @@
         link.classList.add('active');
       });
     });
+
+
+
+document.querySelector(".btn-alpha").addEventListener("click", function(){
+  document.getElementById("filmInfo").style.display = "flex";
+});
+
+
+document.getElementById("closeInfo").addEventListener("click", function(){
+  document.getElementById("filmInfo").style.display = "none";
+});
+
+window.addEventListener("click", function(e){
+  if(e.target.id === "filmInfo"){
+    document.getElementById("filmInfo").style.display = "none";
+  }
+});
