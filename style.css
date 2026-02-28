@@ -550,6 +550,8 @@
 }
 
 
+
+
 @media (max-width: 992px) {
   .theater-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1041,3 +1043,4 @@ background-color: rgb(53, 112, 175);
     opacity: 1;
   }
 }
+
