@@ -173,11 +173,11 @@
 
 
 .film-1{
-    position:relative;
+    position:relative;                          
     height:500px;
     border-radius:14px;
     overflow:hidden;
-    background:url('https://cinematica.kg/uploads/movies/2320ba48-e883-4668-bab3-c22db83b97f9.jpg/1024/800') center/cover no-repeat;
+    background:url('https://cinematica.kg/uploads/movies/541560ce-cda4-4618-a298-369f4800a9c8.jpg/1024/800') center/cover no-repeat;
     box-shadow:0 10px 30px rgba(0,0,0,0.6);
 }
 
