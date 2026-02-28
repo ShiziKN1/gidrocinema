@@ -170,14 +170,12 @@
     padding:40px 5%;
 }
 
-
-
 .film-1{
     position:relative;
     height:500px;
     border-radius:14px;
     overflow:hidden;
-    background:url('https://i.ytimg.com/vi/9u85VRMAauY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAbk2Q1Pew4IqSODi4ttOQVz0RpwQ') center/cover no-repeat;
+    background:url('https://cinematica.kg/uploads/movies/357ae4bb-5ed0-4bfd-9e75-2c6bfc899ff6.jpg/1024/800') center/cover no-repeat;
     box-shadow:0 10px 30px rgba(0,0,0,0.6);
 }
 
@@ -221,7 +219,7 @@
 
 .film-title-x{
     font-size:56px;
-   color:#c7ff00;
+    color:#c7ff00;
     letter-spacing:2px;
     margin-bottom:10px;
 }
