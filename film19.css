@@ -177,7 +177,7 @@
     height:500px;
     border-radius:14px;
     overflow:hidden;
-    background:url('https://cinematica.kg/uploads/movies/599afbd7-2808-4201-b060-d494c1836bfc.jpg/300/430') center/cover no-repeat;
+    background:url('https://cinematica.kg/uploads/movies/905e2827-beae-4686-93d3-50575fd8783f.jpg/1024/800') center/cover no-repeat;
     box-shadow:0 10px 30px rgba(0,0,0,0.6);
 }
 
@@ -277,47 +277,6 @@
   gap: 30px;
 }
 
-.one{
-    display: flex;
-    color: black;
-    margin-top: 10px;
-  
-}
-.one button{
-  margin-left: 220px;
-  width: 55px;
-  height: 30px;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  background-color: rgb(38, 131, 146);
-  
-}
-
-.one p{
-    margin-left: 20px;
-}
-.seans-11{
-    color: black;
-    margin-top: 50px;
-    border-radius: 5px;
-    width: 1550px;
-}
-
-.buttons1{
-    margin-left: 200px;
-    
-}
-
-
-.zal1{
-color: white;
-background-color: rgb(53, 112, 175);
-}
-
-.zal1 h1{
-    margin-left: 20px;
-}
 
 
 @media(max-width:768px){

@@ -20,4 +20,16 @@
       });
     });
 
-    
+
+    function changeLang(lang) {
+  const elements = document.querySelectorAll("[data-ru]");
+
+  elements.forEach(el => {
+    el.textContent = el.getAttribute(`data-${lang}`);
+  });
+
+  localStorage.setItem("lang", lang);
+}
+
+const savedLang = localStorage.getItem("lang") || "ru";
+changeLang(savedLang);
