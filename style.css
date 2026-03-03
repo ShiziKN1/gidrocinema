@@ -26,7 +26,7 @@
      z-index: 100;
      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
      position: fixed; 
-     width: 1700px;
+     width: 1500px;
  }
 
  .logo {
@@ -939,7 +939,7 @@
   border-radius: 5px;
   color: white;
   background-color: rgb(38, 131, 146);
-  
+  text-decoration: none;
 }
 
 .one p{
@@ -954,9 +954,13 @@
 
 .buttons1{
     margin-left: 200px;
-    
+
 }
 
+.buttons-a{
+  text-decoration: none;
+  color: white;
+}
 
 .zal1{
 color: white;

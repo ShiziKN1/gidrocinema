@@ -11,13 +11,13 @@
 </head>
 <body class="body-3">
   
- <header class="top-header">
+  <header class="top-header">
 
         <a class="logo" href="index.html">
-            <img class="logo-img" src="./WhatsApp Image 2026-02-19 at 18.25.38.jpeg" alt="Синематика">
+            <img class="logo-img" src="./WhatsApp Image 2026-02-19 at 18.25.38 1 (1).svg" alt="Синематика">
             <div class="logo-text">
                 <span class="logo-name">СИНЕМАТИКА</span>
-                <span class="logo-subtitle">сеть кинотеатров</span>
+                <span class="logo-subtitle" data-ru="сеть кинотеатров" data-kg="кино тармагы" data-en="cinema chain" >сеть кинотеатров</span>
             </div>
         </a>
 
@@ -32,27 +32,27 @@
                     <path
                         d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z" />
                 </svg>
-                <span class="label" src>Фильмы</span>
+                <span class="label" src  data-ru="Фильмы" data-kg="Тасмалар" data-en="Films" >Фильмы</span>
             </a>
             <a class="menu-item" href="./cinema.html">
                 <svg viewBox="0 0 24 24">
                     <path
                         d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z" />
                 </svg>
-                <span class="label">Кинотеатры</span>
+                <span class="label" data-ru="Кинотеатры" data-kg="Кинотеатырлар" data-en="Cinemas" >Кинотеатры</span>
             </a>
             <a class="menu-item" href="./anons.html">
                 <svg viewBox="0 0 24 24">
                     <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
                 </svg>
-                <span class="label">Анонсы</span>
+                <span class="label" data-ru="Анонсы" data-kg="Жарыялар" data-en="Announcements" >Анонсы</span>
             </a>
         </nav>
 
         <div class="right-links">
-            <a class="lang-link active" href="#">Рус</a>
-            <a class="lang-link" href="#">Кырг</a>
-            <a class="lang-link" href="#">Eng</a>
+            <a class="lang-link active" href="#" onclick="changeLang ('ru')" >Рус</a>
+            <a class="lang-link" href="#" onclick="changeLang ('kg')">Кырг</a>
+            <a class="lang-link" href="#" onclick="changeLang ('en')">Eng</a>
             <a class="login-btn" href="#">Войти</a>
         </div>
     </header>
@@ -68,7 +68,7 @@
 
             <div class="film-bottom-x">
                 <div>
-                    <h1 class="film-title-x" style="margin-bottom: 0px;">Махабатым</h1>
+                    <h1 class="film-title-x" style="margin-bottom: 0px;" data-kg="Mахабатым" data-ru="Mоя любовь" data-en="My love">Махабатым</h1>
                     <div class="release-x" style="margin-bottom: 50px;">В кино с 12 февраля</div>
                 </div>
 
@@ -175,9 +175,9 @@
         
         <p>Махабатым</p>
         <div class="buttons1">
-            <button>20:25</button>
-            <button>22:10</button>
-            <button>23:55</button>
+              <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм махабатым, на 20:25.Свободно или нет?">20:25</a></button> 
+                <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм махабатым, на 22:10.Свободно или нет?">22:10</a></button> 
+           <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм махабатым, на 23:55.Свободно или нет?">23:55</a></button>
         </div>
        
         </div>
@@ -186,8 +186,8 @@
             <div class="one">
             <p>Махабатым</p>
         <div class="buttons1">
-            <button>11:55</button>
-            <button>14:00</button>
+            <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм махабатым, на 11:55.Свободно или нет?">11:55</a></button>
+            <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм махабатым, на 14:00.Свободно или нет?">14:00</a></button>
         </div>
        
     </div>
@@ -205,8 +205,8 @@
         
         <p>Махабатым</p>
         <div class="buttons1">
-            <button>13:30</button>
-            <button>25:45</button>
+            <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм махабатым, на 13:30.Свободно или нет?">13:30</a></button>
+            <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм махабатым, на 15:20.Свободно или нет?">15:20</a></button>
         </div>
        
         </div>
@@ -225,5 +225,6 @@
  
 
 <script src="script.js"></script>
+
 </body>
 </html>

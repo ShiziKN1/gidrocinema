@@ -21,6 +21,18 @@
     });
 
 
+    function changeLang(lang) {
+  const elements = document.querySelectorAll("[data-ru]");
+
+  elements.forEach(el => {
+    el.textContent = el.getAttribute(`data-${lang}`);
+  });
+
+  localStorage.setItem("lang", lang);
+}
+
+const savedLang = localStorage.getItem("lang") || "ru";
+changeLang(savedLang);
 
 document.querySelector(".btn-alpha").addEventListener("click", function(){
   document.getElementById("filmInfo").style.display = "flex";
@@ -40,6 +52,7 @@ window.addEventListener("click", function(e){
 
 
 
+<<<<<<< HEAD
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -59,3 +72,5 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+=======
+>>>>>>> 35a6c3dff1b70c68db2074d4b301a4e36b69a473

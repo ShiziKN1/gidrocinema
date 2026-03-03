@@ -2,6 +2,10 @@
     background:#ffffff; 
 }
 
+.buttons-a{
+  text-decoration: none;
+  color: white;
+}
  
  .top-header {
      background: linear-gradient(90deg, #1a798ab7 50%, #1f8a9ab7 50%, #1a798ab7 50%);
@@ -15,7 +19,7 @@
      z-index: 100;
      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
      position: fixed; 
-     width: 1570px;
+     width: 1500px;
  }
 
  .logo {
