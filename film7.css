@@ -15,7 +15,7 @@
      z-index: 100;
      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
      position: fixed; 
-     width: 1570px;
+     width: 1500px;
  }
 
  .logo {
@@ -305,6 +305,10 @@
 .buttons1{
     margin-left: 200px;
     
+}
+.buttons-a{
+  text-decoration: none;
+  color: white;
 }
 
 
