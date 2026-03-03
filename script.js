@@ -39,3 +39,23 @@ window.addEventListener("click", function(e){
 
 
 
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const btn = document.querySelector(".btn-alpha");
+  const info = document.querySelector(".movie-info"); 
+  const closeBtn = document.querySelector(".close");
+
+  btn.addEventListener("click", () => {
+    info.classList.add("active");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    info.classList.remove("active");
+  });
+
+});
+
+
