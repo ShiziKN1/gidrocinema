@@ -317,6 +317,10 @@ background-color: rgb(53, 112, 175);
     margin-left: 20px;
 }
 
+.buttons-a{
+  text-decoration: none;
+  color: white;
+}
 
 @media(max-width:768px){
 

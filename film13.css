@@ -25,6 +25,10 @@
      text-decoration: none;
      flex-shrink: 0;
  }
+ .buttons-a{
+  text-decoration: none;
+  color: white;
+}
 
 
  .logo-img {
