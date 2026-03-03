@@ -552,6 +552,9 @@
 
 
 
+
+
+
 @media (max-width: 992px) {
   .theater-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -805,7 +808,6 @@
      }
  }
 
- /* страница фильм 1 */
 
 
 .body-3{
