@@ -52,25 +52,8 @@ window.addEventListener("click", function(e){
 
 
 
-<<<<<<< HEAD
 
 
-document.addEventListener("DOMContentLoaded", () => {
-
-  const btn = document.querySelector(".btn-alpha");
-  const info = document.querySelector(".movie-info"); 
-  const closeBtn = document.querySelector(".close");
-
-  btn.addEventListener("click", () => {
-    info.classList.add("active");
-  });
-
-  closeBtn.addEventListener("click", () => {
-    info.classList.remove("active");
-  });
-
-});
 
 
-=======
->>>>>>> 35a6c3dff1b70c68db2074d4b301a4e36b69a473
+
