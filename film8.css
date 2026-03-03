@@ -170,12 +170,21 @@
     padding:40px 5%;
 }
 
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 0c988379bf4439b9c27a890a6bb25cc551ffd0cf
 .film-1{
     position:relative;
     height:500px;
     border-radius:14px;
     overflow:hidden;
+<<<<<<< HEAD
+    background:url('https://cinematica.kg/uploads/movies/bee87805-6798-49ce-8f61-66df7ef682b6.jpg/1024/800') center/cover no-repeat;
+=======
     background:url('https://cinematica.kg/uploads/movies/c881636c-a6bf-4d18-ba04-8e66ff9e6883.jpg/1024/800') center/cover no-repeat;
+>>>>>>> 0c988379bf4439b9c27a890a6bb25cc551ffd0cf
     box-shadow:0 10px 30px rgba(0,0,0,0.6);
 }
 
