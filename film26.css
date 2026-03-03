@@ -1,0 +1,342 @@
+.body-3{
+    background:#ffffff; 
+}
+
+ 
+ .top-header {
+     background: linear-gradient(90deg, #1a798ab7 50%, #1f8a9ab7 50%, #1a798ab7 50%);
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 40px;
+     height: 62px;
+    margin: 0;
+  
+     z-index: 100;
+     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+     position: fixed; 
+     width: 1570px;
+ }
+
+ .logo {
+     display: flex;
+     align-items: center;
+     gap: 12px;
+     text-decoration: none;
+     flex-shrink: 0;
+ }
+
+
+ .logo-img {
+     width: 46px;
+     height: 46px;
+     object-fit: contain;
+     display: block;
+ }
+
+ .logo-text {
+     display: flex;
+     flex-direction: column;
+     line-height: 1.1;
+ }
+
+ .logo-name {
+     font-family: 'Oswald', sans-serif;
+     font-size: 20px;
+     font-weight: 700;
+     color: white;
+     letter-spacing: 2px;
+     text-transform: uppercase;
+ }
+
+ .logo-subtitle {
+     font-size: 9px;
+     color: rgba(255, 255, 255, 0.65);
+     letter-spacing: 1.5px;
+     text-transform: uppercase;
+ }
+
+ 
+ .menu {
+     display: flex;
+     align-items: center;
+     height: 62px;
+ }
+
+ .menu-item {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 4px;
+     padding: 0 28px;
+     height: 100%;
+     text-decoration: none;
+     color: white;
+     font-weight: 600;
+     transition: background 0.2s;
+     cursor: pointer;
+ }
+
+ .menu-item:hover {
+     background: rgba(255, 255, 255, 0.12);
+ }
+
+ .menu-item svg {
+     width: 20px;
+     height: 20px;
+     fill: white;
+     opacity: 0.9;
+ }
+
+ .menu-item .label {
+     font-size: 13px;
+     font-weight: 500;
+     white-space: nowrap;
+ }
+
+ .menu-imax {
+     font-family: 'Oswald', sans-serif;
+     font-size: 22px;
+     font-weight: 700;
+     letter-spacing: 1px;
+     padding: 0 24px;
+ }
+
+ .menu-dolby {
+     padding: 0 24px;
+     text-align: center;
+ }
+
+ .menu-dolby .dolby-logo {
+     font-family: 'Oswald', sans-serif;
+     font-size: 15px;
+     font-weight: 700;
+     line-height: 1;
+ }
+
+ .menu-dolby .dolby-atmos {
+     font-size: 10px;
+     letter-spacing: 2px;
+     color: rgba(255, 255, 255, 0.85);
+ }
+
+ .right-links {
+     display: flex;
+     align-items: center;
+     gap: 4px;
+     flex-shrink: 0;
+ }
+
+ .lang-link {
+     color: white;
+     text-decoration: none;
+     font-size: 14px;
+     font-weight: 500;
+     padding: 5px 10px;
+     border-radius: 3px;
+     transition: 0.2s;
+     opacity: 0.9;
+ }
+
+ .lang-link.active,
+ .lang-link:hover {
+     background: rgba(255, 255, 255, 0.15);
+     opacity: 1;
+ }
+
+ .lang-link.active {
+     text-decoration: underline;
+ }
+
+ .login-btn {
+     color: white;
+     text-decoration: none;
+     font-size: 14px;
+     font-weight: 600;
+     padding: 5px 14px;
+     margin-left: 6px;
+     border-radius: 3px;
+     transition: 0.2s;
+ }
+
+ .login-btn:hover {
+     background: rgba(255, 255, 255, 0.15);
+ }
+
+
+
+.page-wrap-x{
+    padding:40px 5%;
+}
+
+
+
+.film-1{
+    position:relative;
+    height:500px;
+    border-radius:14px;
+    overflow:hidden;
+    background:url('https://cinematica.kg/uploads/movies/3181574d-5fee-4ef4-9f63-c473ac402ac4.jpg/1024/800') center/cover no-repeat;
+    box-shadow:0 10px 30px rgba(0,0,0,0.6);
+}
+
+.shade-9{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.2));
+}
+
+
+.film-inner-x{
+    position:relative;
+    height:100%;
+    padding:30px 40px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;  
+    color:white;
+}
+
+
+.film-top-x{
+    display:flex;
+    justify-content:flex-start;
+}
+
+.age-tag-x{
+    background:#1c1c1c;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+
+.film-bottom-x{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:20px;
+}
+
+.film-title-x{
+    font-size:56px;
+   color:#c7ff00;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+
+.film-sub-x{
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.release-x{
+    font-size:15px;
+    opacity:0.9;
+}
+
+
+.btn-pack-x{
+    display:flex;
+    gap:15px;
+}
+
+.btn-alpha,
+.btn-beta{
+    padding:10px 22px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.btn-alpha{
+    background:#00a2ff;
+    color:white;
+}
+
+.btn-beta{
+    background:#0048ff;
+    color:white;
+}
+
+.seances{
+  max-width: 1570px;
+  margin: 0 auto;
+  padding: 0px 15px;
+
+}
+
+.internet{
+  max-width: 1570px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  margin-top: 80px;
+  display: flex;
+  gap: 30px;
+}
+
+
+
+.film-infa{
+  width: 1350px;
+  margin-left: 80px;
+  
+}
+
+.label{
+    font-weight: 600;
+    font-size: 20px;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.value{
+    font-weight: 400;
+    color: #000;
+  
+}
+
+
+
+@media(max-width:768px){
+
+    .page-wrap-x{
+        padding:20px;
+    }
+
+    .film-1{
+        height:380px;
+    }
+
+    .film-inner-x{
+        padding:20px;
+    }
+
+    .film-bottom-x{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:20px;
+    }
+
+    .film-title-x{
+        font-size:28px;
+    }
+
+    .film-sub-x{
+        font-size:14px;
+    }
+
+    .btn-pack-x{
+        width:100%;
+        flex-direction:column;
+    }
+
+    .btn-pack-x button{
+        width:100%;
+    }
+}
+
+
+
