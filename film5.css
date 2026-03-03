@@ -163,6 +163,10 @@
  .login-btn:hover {
      background: rgba(255, 255, 255, 0.15);
  }
+.buttons-a{
+  text-decoration: none;
+  color: white;
+}
 
 
 

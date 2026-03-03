@@ -2,6 +2,10 @@
     background:#ffffff; 
 }
 
+.buttons-a{
+  text-decoration: none;
+  color: white;
+}
  
  .top-header {
      background: linear-gradient(90deg, #1a798ab7 50%, #1f8a9ab7 50%, #1a798ab7 50%);

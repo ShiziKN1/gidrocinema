@@ -939,7 +939,7 @@
   border-radius: 5px;
   color: white;
   background-color: rgb(38, 131, 146);
-  
+  text-decoration: none;
 }
 
 .one p{
@@ -954,9 +954,13 @@
 
 .buttons1{
     margin-left: 200px;
-    
+
 }
 
+.buttons-a{
+  text-decoration: none;
+  color: white;
+}
 
 .zal1{
 color: white;

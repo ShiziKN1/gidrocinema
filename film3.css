@@ -281,6 +281,11 @@
     margin-top: 10px;
   
 }
+.buttons-a{
+  text-decoration: none;
+  color: white;
+}
+
 .one button{
   margin-left: 220px;
   width: 55px;
