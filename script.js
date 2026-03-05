@@ -21,56 +21,13 @@
     });
 
 
-    function changeLang(lang) {
-  const elements = document.querySelectorAll("[data-ru]");
 
-  elements.forEach(el => {
-    el.textContent = el.getAttribute(`data-${lang}`);
-  });
-
-  localStorage.setItem("lang", lang);
+function showInfo() {
+    document.getElementById("info").style.display = "block";
 }
 
-const savedLang = localStorage.getItem("lang") || "ru";
-changeLang(savedLang);
-
-document.querySelector(".btn-alpha").addEventListener("click", function(){
-  document.getElementById("filmInfo").style.display = "flex";
-});
+function closeInfo() {
+    document.getElementById("info").style.display = "none";
+}
 
 
-document.getElementById("closeInfo").addEventListener("click", function(){
-  document.getElementById("filmInfo").style.display = "none";
-});
-
-window.addEventListener("click", function(e){
-  if(e.target.id === "filmInfo"){
-    document.getElementById("filmInfo").style.display = "none";
-  }
-});
-
-
-
-
-<<<<<<< HEAD
-
-
-document.addEventListener("DOMContentLoaded", () => {
-
-  const btn = document.querySelector(".btn-alpha");
-  const info = document.querySelector(".movie-info"); 
-  const closeBtn = document.querySelector(".close");
-
-  btn.addEventListener("click", () => {
-    info.classList.add("active");
-  });
-
-  closeBtn.addEventListener("click", () => {
-    info.classList.remove("active");
-  });
-
-});
-
-
-=======
->>>>>>> 35a6c3dff1b70c68db2074d4b301a4e36b69a473

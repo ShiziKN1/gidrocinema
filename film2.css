@@ -329,38 +329,27 @@ background-color: rgb(53, 112, 175);
 
 
 
-
-.movie-info {
-  position: fixed;
-  bottom: -100%;
-  left: 0;
-  width: 100%;
-  height: 80vh;
-  background: white;
-  border-radius: 25px 25px 0 0;
-  box-shadow: 0 -5px 25px rgba(0,0,0,0.3);
-  transition: 0.4s ease;
-  z-index: 1000;
-
+#info{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.8);
+    color:white;
+    padding:60px;
+    z-index:200;
 }
 
-.movie-info.active {
-  bottom: 0;
+button{
+    padding:10px 20px;
+    background:#00aaff;
+    border:none;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
 }
-
-.movie-content {
-  padding: 25px;
-  height: 100%;
-  overflow-y: auto;
-  color: black;
-}
-
-.close {
-  font-size: 22px;
-  cursor: pointer;
-  float: right;
-}
-
 
 
 
