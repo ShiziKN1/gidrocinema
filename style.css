@@ -580,7 +580,7 @@
     height: 160px;
   }
 
-}
+} 
  /* страница фильм */
  .film {
   margin: 0;
@@ -1048,5 +1048,5 @@ background-color: rgb(53, 112, 175);
     transform: scale(1);
     opacity: 1;
   }
-}
+ }
 
