@@ -565,6 +565,9 @@
   .theater-grid {
     grid-template-columns: 1fr;
   }
+
+
+  
 }
 @media (max-width: 768px) {
 
@@ -678,6 +681,9 @@
   .film-box img {
     height: 260px;
   }
+
+
+ 
 } 
 
 /* страница ананс */
