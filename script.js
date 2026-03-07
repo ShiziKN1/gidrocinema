@@ -20,8 +20,6 @@
       });
     });
 
-
-
 function showInfo() {
     document.getElementById("info").style.display = "block";
 }
@@ -29,5 +27,4 @@ function showInfo() {
 function closeInfo() {
     document.getElementById("info").style.display = "none";
 }
-
 
