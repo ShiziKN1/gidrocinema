@@ -56,3 +56,7 @@ window.addEventListener("click", function(e){
     document.getElementById("filmInfo").style.display = "none";
   }
 });
+
+
+
+
