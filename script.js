@@ -1,4 +1,4 @@
- let current = 0;
+let current = 0;
     const slides = document.querySelectorAll('.hero-slide');
     const dots   = document.querySelectorAll('.dot');
 
