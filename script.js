@@ -20,8 +20,16 @@
       });
     });
 
+function showInfo() {
+    document.getElementById("info").style.display = "block";
+}
 
-    function changeLang(lang) {
+function closeInfo() {
+    document.getElementById("info").style.display = "none";
+}
+
+
+function changeLang(lang) {
   const elements = document.querySelectorAll("[data-ru]");
 
   elements.forEach(el => {
@@ -48,12 +56,3 @@ window.addEventListener("click", function(e){
     document.getElementById("filmInfo").style.display = "none";
   }
 });
-
-
-
-
-
-
-
-
-
