@@ -28,3 +28,31 @@ function closeInfo() {
     document.getElementById("info").style.display = "none";
 }
 
+
+function changeLang(lang) {
+  const elements = document.querySelectorAll("[data-ru]");
+
+  elements.forEach(el => {
+    el.textContent = el.getAttribute(`data-${lang}`);
+  });
+
+  localStorage.setItem("lang", lang);
+}
+
+const savedLang = localStorage.getItem("lang") || "ru";
+changeLang(savedLang);
+
+document.querySelector(".btn-alpha").addEventListener("click", function(){
+  document.getElementById("filmInfo").style.display = "flex";
+});
+
+
+document.getElementById("closeInfo").addEventListener("click", function(){
+  document.getElementById("filmInfo").style.display = "none";
+});
+
+window.addEventListener("click", function(e){
+  if(e.target.id === "filmInfo"){
+    document.getElementById("filmInfo").style.display = "none";
+  }
+});
