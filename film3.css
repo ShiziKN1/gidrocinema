@@ -15,7 +15,7 @@
      z-index: 100;
      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
      position: fixed; 
-     width: 1570px;
+     width: 1500px;
  }
 
  .logo {
@@ -170,8 +170,6 @@
     padding:40px 5%;
 }
 
-
-
 .film-1{
     position:relative;
     height:500px;
@@ -283,6 +281,11 @@
     margin-top: 10px;
   
 }
+.buttons-a{
+  text-decoration: none;
+  color: white;
+}
+
 .one button{
   margin-left: 220px;
   width: 55px;
@@ -319,6 +322,30 @@ background-color: rgb(53, 112, 175);
     margin-left: 20px;
 }
 
+
+
+
+#info{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.8);
+    color:white;
+    padding:60px;
+    z-index:200;
+}
+
+button{
+    padding:10px 20px;
+    background:#00aaff;
+    border:none;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
 
 @media(max-width:768px){
 

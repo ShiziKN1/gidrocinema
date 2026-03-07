@@ -15,7 +15,7 @@
      z-index: 100;
      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
      position: fixed; 
-     width: 1570px;
+     width: 1500px;
  }
 
  .logo {
@@ -56,6 +56,30 @@
      text-transform: uppercase;
  }
 
+
+ 
+
+#info{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.8);
+    color:white;
+    padding:60px;
+    z-index:200;
+}
+
+button{
+    padding:10px 20px;
+    background:#00aaff;
+    border:none;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
  
  .menu {
      display: flex;
@@ -163,6 +187,10 @@
  .login-btn:hover {
      background: rgba(255, 255, 255, 0.15);
  }
+.buttons-a{
+  text-decoration: none;
+  color: white;
+}
 
 
 
@@ -170,14 +198,12 @@
     padding:40px 5%;
 }
 
-
-
 .film-1{
     position:relative;
     height:500px;
     border-radius:14px;
     overflow:hidden;
-    background:url('https://cinematica.kg/uploads/movies/bee87805-6798-49ce-8f61-66df7ef682b6.jpg/1024/800') center/cover no-repeat;
+    background:url('https://cinematica.kg/uploads/movies/c881636c-a6bf-4d18-ba04-8e66ff9e6883.jpg/1024/800') center/cover no-repeat;
     box-shadow:0 10px 30px rgba(0,0,0,0.6);
 }
 
@@ -187,9 +213,6 @@
     background:linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.2));
 }
 
-.film5{
-
-}
 
 .film-inner-x{
     position:relative;
