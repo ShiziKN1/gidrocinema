@@ -22,17 +22,19 @@ setInterval(() => changeSlide(1), 5000);
 const hamburger = document.getElementById('hamburger');
 const mobileNav = document.getElementById('mobileNav');
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('open');
-  mobileNav.classList.toggle('open');
-});
-
-mobileNav.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    hamburger.classList.remove('open');
-    mobileNav.classList.remove('open');
+if (hamburger && mobileNav) {
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileNav.classList.toggle('open');
   });
-});
+
+  mobileNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+    });
+  });
+}
 
 
 // ===== TRANSLATIONS =====
@@ -43,7 +45,7 @@ const translations = {
     cinemas: "Кинотеатры",
     announcements: "Анонсы",
     login: "Войти",
-    now_playing: "Сейчас в кино",
+    now_playing: "Сегодня в кино",
     genre: "Жанр: ",
     year: "Год: ",
     footer_contacts: "Контакты",
@@ -52,10 +54,7 @@ const translations = {
     footer_ads: "Уведомление о рекламе",
     footer_faq: "FAQ",
     footer_vacancies: "Вакансии",
-    footer_rules: "Правила посещения кинотеатров",
-    lang_ru: "Рус",
-    lang_kg: "Кырг",
-    lang_en: "Eng"
+    footer_rules: "Правила посещения кинотеатров"
   },
   kg: {
     network: "кинотеатрлар тармагы",
@@ -72,10 +71,7 @@ const translations = {
     footer_ads: "Жарнама жөнүндө билдирүү",
     footer_faq: "КБС (FAQ)",
     footer_vacancies: "Ваканшялар",
-    footer_rules: "Кинотеатрларга баруу эрежелери",
-    lang_ru: "Рус",
-    lang_kg: "Кырг",
-    lang_en: "Eng"
+    footer_rules: "Кинотеатрларга баруу эрежелери"
   },
   en: {
     network: "cinema network",
@@ -92,27 +88,20 @@ const translations = {
     footer_ads: "Ad Notice",
     footer_faq: "FAQ",
     footer_vacancies: "Vacancies",
-    footer_rules: "Cinema Rules",
-    lang_ru: "Rus",
-    lang_kg: "Kgz",
-    lang_en: "Eng"
+    footer_rules: "Cinema Rules"
   }
 };
 
-let currentLang = localStorage.getItem("lang") || "ru";
+let currentLang = 'ru';
 
 function setLanguage(lang) {
   currentLang = lang;
-
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
-
     if (translations[lang]?.[key]) {
       el.textContent = translations[lang][key];
     }
   });
-
-  localStorage.setItem("lang", lang);
 }
 
 
@@ -120,45 +109,51 @@ function setLanguage(lang) {
 document.querySelectorAll('.lang-link').forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
-
     const lang = link.getAttribute('data-lang');
+    if (!lang) return;
 
-    document.querySelectorAll('.lang-link').forEach(l => {
-      l.classList.remove('active');
-    });
-
-    document
-      .querySelectorAll(`.lang-link[data-lang="${lang}"]`)
-      .forEach(l => l.classList.add('active'));
+    // Убираем active у всех кнопок языка (десктоп + мобильное меню)
+    document.querySelectorAll('.lang-link').forEach(l => l.classList.remove('active'));
+    // Ставим active на все кнопки с таким же data-lang
+    document.querySelectorAll(`.lang-link[data-lang="${lang}"]`).forEach(l => l.classList.add('active'));
 
     setLanguage(lang);
   });
 });
 
-setLanguage(currentLang);
+// Дефолтный язык
+setLanguage('ru');
 
 
-// ===== SIMPLE INFO MODAL =====
+// ===== FILM INFO MODAL (для страниц с фильмом) =====
 function showInfo() {
-  document.getElementById("info").style.display = "block";
+  const el = document.getElementById("info");
+  if (el) el.style.display = "block";
 }
 
 function closeInfo() {
-  document.getElementById("info").style.display = "none";
+  const el = document.getElementById("info");
+  if (el) el.style.display = "none";
 }
 
+const btnAlpha = document.querySelector(".btn-alpha");
+const filmInfoModal = document.getElementById("filmInfo");
+const closeInfoBtn = document.getElementById("closeInfo");
 
-// ===== FILM MODAL =====
-document.querySelector(".btn-alpha")?.addEventListener("click", function () {
-  document.getElementById("filmInfo").style.display = "flex";
-});
+if (btnAlpha && filmInfoModal) {
+  btnAlpha.addEventListener("click", () => {
+    filmInfoModal.style.display = "flex";
+  });
+}
 
-document.getElementById("closeInfo")?.addEventListener("click", function () {
-  document.getElementById("filmInfo").style.display = "none";
-});
+if (closeInfoBtn && filmInfoModal) {
+  closeInfoBtn.addEventListener("click", () => {
+    filmInfoModal.style.display = "none";
+  });
+}
 
-window.addEventListener("click", function (e) {
-  if (e.target.id === "filmInfo") {
-    document.getElementById("filmInfo").style.display = "none";
+window.addEventListener("click", e => {
+  if (filmInfoModal && e.target.id === "filmInfo") {
+    filmInfoModal.style.display = "none";
   }
 });
