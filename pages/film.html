@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="film">
+     <header class="top-header">
+
+
+        <a class="logo" href="../index.html">
+    <img class="logo-img" src="../assets/logo.svg" alt="Синематика">
+    <div class="logo-text">
+        <span class="logo-name">ГИДРОСИНЕМА</span>
+        <span class="logo-subtitle">сеть кинотеатров</span>
+    </div>
+</a>
+        <div class="hamburger" onclick="toggleMenu()" aria-label="Меню">☰</div>
+        <nav class="menu">
+            <a class="menu-item menu-imax" href="./imax.html">IMAX</a>
+            <a class="menu-item menu-dolby" href="./dolby.html">
+                <span class="dolby-logo">DOLBY</span>
+                <span class="dolby-atmos">ATMOS</span>
+            </a> 
+            <a class="menu-item" href="./film.html">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z" />
+                </svg>
+                <span class="label" data-ru="Фильмы" data-kg="Тасмалар" data-en="Films">Фильмы</span>
+            </a>
+            <a class="menu-item" href="./cinema.html">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z" />
+                </svg>
+                <span class="label" data-ru="Кинотеатры" data-kg="Кинотеатырлар" data-en="Cinemas" >Кинотеатры</span>
+            </a>
+            <a class="menu-item" href="./anons.html">
+                <svg viewBox="0 0 24 24">
+                    <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+                </svg>
+                <span class="label" data-ru="Анонсы" data-kg="Жарыялар" data-en="Announcements">Анонсы</span>
+            </a>
+        </nav>
+
+        <div class="right-links">
+            <a class="lang-link active" href="#" onclick="changeLang('ru'); return false;">Рус</a>
+            <a class="lang-link" href="#" onclick="changeLang('kg'); return false;">Кырг</a>
+            <a class="lang-link" href="#" onclick="changeLang('en'); return false;">Eng</a>
+            <a class="login-btn" href="../index.html#contacts">Войти</a>
+        </div>
+    </header>
+
+ <section class="film-area">
+  <div class="film-container">
+
+    <h2 class="section-title" data-ru="Сегодня в кино" data-kg="Бугун кинодо" data-en="Today">Сегодня в кино</h2>
+
+    <div class="film-layout">
+
+     <a href="./film2.html"> <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/5094a207-6de1-4b78-ae35-7b1362252a93.jpg/1024/800" alt="">
+        <div class="film-details">
+          <h3>Махабатым</h3>
+          <p>Жанр: Комедия,мелодрама</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+</a>
+    <a href="film3.html"> <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/5044b182-cf39-4b48-a798-bc8eb4dba717.jpg/300/430" alt="">
+        <div class="film-details">
+          <h3>Ограбление в Лос-Анджелесе</h3>
+          <p>Жанр: триллер, драма, криминал</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+</a> 
+<a href="./film4.html">
+         <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/84cef218-de5b-4243-a451-5b13863f730b.jpg/300/430" alt="">
+        <div class="film-details">
+          <h3>Грозовой перевал</h3>
+          <p>Жанр: драма, мелодрама</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+</a>
+<a href="./film5.html">
+         <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/633c20f8-4e83-4b66-87a6-1696766fe438.jpg/300/430" alt="">
+        <div class="film-details">
+          <h3>Бейиш 2: Апама кат</h3>
+          <p>Жанр: Драма</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+</a>
+<a href="./film6.html">
+         <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/d8463669-3517-46e3-b599-de3bc3942fe6.jpg/300/430" alt="">
+        <div class="film-details">
+          <h3>Аян</h3>
+          <p>Жанр:Психологическая драма</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+</a>
+<a href="./film7.html">
+         <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/e27f8e16-22f3-40ac-8b23-a006bdc9001e.jpg/300/430" alt="">
+        <div class="film-details">
+          <h3>Супер Мишка</h3>
+          <p>Жанр: мультфильм, приключения, фантастика</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+ </a>     
+    
+
+
+
+
+
+
+    <a href="./film10.html">
+        <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/2d8c25cb-3014-4725-82f0-256af98b4d8a.jpg/300/430" alt="">
+        <div class="film-details">
+          <h3>Красавица</h3>
+          <p>Жанр:приключения, драма, военный, история</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+      </a>
+
+
+
+      <a href="./film11.html">
+      <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/633c20f8-4e83-4b66-87a6-1696766fe438.jpg/300/430" alt="">
+        <div class="film-details">
+          <h3>(русский дубляж) Рай под ногами матерей 2: Письмо матери</h3>
+          <p>Жанр: Драма</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+       </a>
+
+      <a href="./film12.html">
+         <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/599afbd7-2808-4201-b060-d494c1836bfc.jpg/300/430" alt="">
+        <div class="film-details">
+          <h3>Улыбка. Зарождение зла</h3>
+          <p>Жанр:ужасы</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+   </a>
+        
+
+   <a href="./film13.html">
+         <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/5a2f99ed-5fd3-494b-b929-673ae55f4986.jpeg/300/430" alt="">
+        <div class="film-details">
+          <h3>Оюн</h3>
+          <p>Жанр: Детектив триллер</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+      </a>
+
+       <a href="./film14.html">
+         <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/9a9e88ca-bc1f-4f8b-8ddb-565d06f71659.jpg/300/430" alt="">
+        <div class="film-details">
+          <h3>Татынакайым </h3>
+          <p>Жанр: Комедия, Мелодрама</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+    </a>
+      
+
+    <a href="./film15.html">
+         <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/994e87f8-ae00-4e35-9dfb-4098e9bdc306.jpg/300/430" alt="">
+        <div class="film-details">
+          <h3>Goat: Мечтай по-крупному </h3>
+          <p>Жанр: мультфильм, спорт, боевик, комедия</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+  </a>
+      
+
+     <a href="./film16.html">
+         <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/8c745e49-f7b9-4b44-bda9-14a6a13b48ea.jpg/300/430" alt="">
+        <div class="film-details">
+          <h3>Горничная</h3>
+          <p>Жанр: триллер, драма</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+        </a>
+
+        <a href="./film17.html">  <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/10a776df-5b97-4f4f-90a9-da286b2ea7fd.jpg/300/430" alt="">
+        <div class="film-details">
+          <h3>Убежище</h3>
+          <p>Жанр: боевик, триллер</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+</a> 
+
+
+      <a href="./film18.html">
+           <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/f4331e1e-ece7-417f-8cb2-5c673fa03252.jpg/300/430" alt="">
+        <div class="film-details">
+          <h3>Полчанки</h3>
+          <p>Жанр: Комедия</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+</a>
+
+</div>
+     
+
+
+
+
+
+
+
+<h2 class="section-title" data-ru="Скоро в кино" data-kg="Жакында кинодо" data-en="Soon">Скоро в кино</h2>
+     <div class="film-layout">
+
+
+      <a href="./film19.html">
+      <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/cb5656e3-d4e9-4973-8539-99c7c63e710e.png/300/430" alt="">
+        <div class="film-details">
+          <h3>Африкалык келин</h3>
+          <p>Жанр: Комедия</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+      </a>
+
+
+      <a href="./film20.html">
+      <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/93790e09-9f69-427b-b1e6-2760590e8d7a.jpg/300/430" alt="">
+        <div class="film-details">
+          <h3>Салт: Тетири бата</h3>
+          <p>Жанр: ужасы</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+      </a>
+
+
+      <a href="./film21.html">
+         <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/a649b958-0c53-439a-a13b-abf5a8479c83.jpg/300/430" alt="">
+        <div class="film-details">
+          <h3>Невеста!</h3>
+          <p>Жанр: ужасы, фантастика, драма, мелодрама</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+      </a>
+
+
+      <a href="./film22.html">
+         <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/c35a180c-1b2e-4fd2-b6e2-375b35c86022.jpg/300/430" alt="">
+        <div class="film-details">
+          <h3>Хамнет: История, вдохновившая Гамлета</h3>
+          <p>Жанр: биография, драма</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+      </a>
+
+
+      <a href="./film23.html">
+         <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/265dadd1-5e74-4f4b-8d99-a8c3ecc033e8.jpg/300/430" alt="">
+        <div class="film-details">
+          <h3>Битир 2</h3>
+          <p>Жанр:Комедия</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+      </a>
+
+
+
+      <a href="./film24.html">
+         <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/06f340e7-2e86-41a3-9589-f4d4e740173d.jpg/300/430" alt="">
+        <div class="film-details">
+          <h3>Новая тёща</h3>
+          <p>Жанр:комедия </p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+      </a>
+      
+
+      <a href="./film25.html">
+         <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/a3e044d8-6310-45d0-8bd9-ce45dfb9dc14.jpg/300/430" alt="">
+        <div class="film-details">
+          <h3>Прыгуны</h3>
+          <p>Жанр: мультфильм, фантастика, комедия, приключения, семейный</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+      </a>
+
+      <a href="./film26.html">
+         <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/7f3b0bb8-b45b-4c3d-998e-13ffebc202aa.jpg/300/430" alt="">
+        <div class="film-details">
+          <h3>Наследник</h3>
+          <p>Жанр: триллер, драма, комедия</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+      </a>
+
+
+      <a href="./film27.html">
+        <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/bd9ace3c-1253-4ce7-9bd4-adc79b225557.jpeg/300/430" alt="">
+        <div class="film-details">
+          <h3>Напоминание о нем</h3>
+          <p>Жанр: драма, мелодрама</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+      </a>
+
+      <a href="./film28.html  ">
+         <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/7b6c6d5e-187b-4e3b-99de-04af77a4a3aa.png/300/430" alt="">
+        <div class="film-details">
+          <h3>Черный двор</h3>
+          <p>Жанр:Криминальная драма </p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+      </a>
+
+
+      <a href="./film29.html">
+         <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/57d89a2c-88db-4eb8-a0db-786d4d499d25.jpg/300/430" alt="">
+        <div class="film-details">
+          <h3>Нелегал. Через Мексику</h3>
+          <p>Жанр: Драма, Экшн</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+      </a>
+
+      
+      <a href="./film30.html">
+         <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/04b8e391-48cd-45ee-b051-f4f3d8300be8.jpg/300/430" alt="">
+        <div class="film-details">
+          <h3>Проект «Конец света»</h3>
+          <p>Жанр: фантастика, триллер, драма</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+   </a>
+
+      
+   <a href="./film31.html">
+         <div class="film-box">
+        <img src="https://cinematica.kg/uploads/movies/233b63a0-44cc-4ad9-b971-d737c70813cd.jpeg/300/430" alt="">
+        <div class="film-details">
+          <h3>Они придут за тобой</h3>
+          <p>Жанр: комедия, ужасы</p>
+          <span>Год: 2026</span>
+        </div>
+      </div>
+    </a>
+      
+     
+  </div>
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-links">
+      <a href="../index.html#contacts" data-ru="Контакты" data-kg="Контакттар" data-en="Contacts">Контакты</a>
+      <a href="../index.html#contacts" data-ru="Обратная связь" data-kg="Байланышуу" data-en="Feeldback">Обратная связь</a>
+      <a href="../index.html#contacts" data-ru="Рассылка" data-kg="Катталуу" data-en="Subscription">Рассылка</a>
+      <a href="../index.html#contacts" data-ru="Уведомление о рекламе" data-kg="Жарнама" data-en="Ads">Уведомление о рекламе</a>
+      <a href="../index.html#contacts" data-ru="FAQ" data-kg="FAQ" data-en="FAQ">FAQ</a>
+      <a href="../index.html#contacts" data-ru="Вакансии" data-kg="Жумуш" data-en="Vacancies">Вакансии</a>
+      <a href="../index.html#contacts" data-ru="Правила посещения кинотеатров" data-kg="Кинотеатрга кирүү эрежелери" data-en="Rules">Правила посещения кинотеатров</a>
+    </div>
+
+      <div class="footer-copy">
+        © Cinematica 2026
+      </div>
+
+    </div>
+  </footer>
+<button id="back-to-top" title="Наверх" aria-label="Наверх">↑</button>
+</section>
+<script src="../js/script.js"></script>
+</body>
+</html>

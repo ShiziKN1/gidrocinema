@@ -17,7 +17,7 @@
         e.preventDefault();
         document.querySelectorAll('.lang-link').forEach(l => l.classList.remove('active'));
         link.classList.add('active');
-      });
+      });                                                                   
     });
 
 function showInfo() {
@@ -27,8 +27,6 @@ function showInfo() {
 function closeInfo() {
     document.getElementById("info").style.display = "none";
 }
-
-
 function changeLang(lang) {
   const elements = document.querySelectorAll("[data-ru]");
 
@@ -55,4 +53,4 @@ window.addEventListener("click", function(e){
   if(e.target.id === "filmInfo"){
     document.getElementById("filmInfo").style.display = "none";
   }
-});
+}); 
