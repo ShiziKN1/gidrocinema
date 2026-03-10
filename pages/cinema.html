@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="body-2">
+<header class="top-header">
+
+
+        <a class="logo" href="../index.html">
+    <img class="logo-img" src="../assets/logo.svg" alt="Синематика">
+    <div class="logo-text">
+        <span class="logo-name">ГИДРОСИНЕМА</span>
+        <span class="logo-subtitle">сеть кинотеатров</span>
+    </div>
+</a>
+        <div class="hamburger" onclick="toggleMenu()" aria-label="Меню">☰</div>
+        <nav class="menu">
+            <a class="menu-item menu-imax" href="./imax.html">IMAX</a>
+            <a class="menu-item menu-dolby" href="./dolby.html">
+                <span class="dolby-logo">DOLBY</span>
+                <span class="dolby-atmos">ATMOS</span>
+            </a> 
+            <a class="menu-item" href="./film.html">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z" />
+                </svg>
+                <span class="label" data-ru="Фильмы" data-kg="Тасмалар" data-en="Films">Фильмы</span>
+            </a>
+            <a class="menu-item" href="./cinema.html">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z" />
+                </svg>
+                <span class="label" data-ru="Кинотеатры" data-kg="Кинотеатырлар" data-en="Cinemas" >Кинотеатры</span>
+            </a>
+            <a class="menu-item" href="./anons.html">
+                <svg viewBox="0 0 24 24">
+                    <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+                </svg>
+                <span class="label" data-ru="Анонсы" data-kg="Жарыялар" data-en="Announcements">Анонсы</span>
+            </a>
+        </nav>
+
+        <div class="right-links">
+            <a class="lang-link active" href="#" onclick="changeLang('ru'); return false;">Рус</a>
+            <a class="lang-link" href="#" onclick="changeLang('kg'); return false;">Кырг</a>
+            <a class="lang-link" href="#" onclick="changeLang('en'); return false;">Eng</a>
+            <a class="login-btn" href="../index.html#contacts">Войти</a>
+        </div>
+    </header>
+    <section class="theater-zone">
+
+  
+  <div class="theater-banner"></div>
+  <div class="theater-wrapper">
+
+    <h2 class="theater-title">
+      КИНОТЕАТРЫ СЕТИ "СИНЕМАТИКА"
+    </h2>
+
+    <div class="theater-grid">
+
+      <a href=""><div class="theater-card">
+        <div class="theater-logo">
+          <img src="https://cinematica.kg/uploads/cinemas/413acb05-2ed6-4f9c-8bac-f2185ac78cc3.png" alt="">
+        </div>
+        <div class="theater-name">Дордой Плаза</div>
+      </div>
+</a>
+      <a href=""><div class="theater-card">
+        <div class="theater-logo">
+          <img src="https://cinematica.kg/uploads/cinemas/f673b37f-7e2e-449c-a5e5-4e52a45d832f.png" alt="">
+        </div>
+        <div class="theater-name">КосмоПарк</div>
+      </div>
+</a>
+<a href="">
+      <div class="theater-card">
+        <div class="theater-logo">
+          <img src="https://cinematica.kg/uploads/cinemas/193e6dbd-f552-452e-827c-e25ccdba0048.PNG" alt="">
+        </div>
+        <div class="theater-name">Аламедин Гранд</div>
+      </div>
+</a>
+<a href="">
+      <div class="theater-card">
+        <div class="theater-logo">
+          <img src="https://cinematica.kg/uploads/cinemas/f6e80094-aa2d-4608-8421-c0e6d9cfcb31.png" alt="">
+        </div>
+        <div class="theater-name">Бишкек Парк</div>
+      </div>
+</a>
+<a href="">
+      <div class="theater-card">
+        <div class="theater-logo">
+          <img src="https://cinematica.kg/uploads/cinemas/3e6c59c6-303e-4966-b9f1-6dab81bfba09.jpeg" alt="">
+        </div>
+        <div class="theater-name">
+          Дордой Моторс (партнерский кинотеатр)
+        </div>
+      </div>
+</a>
+    </div>
+
+  </div>
+ 
+</section>
+ <footer class="site-footer" style="margin-top: 80px; ">
+  <div class="footer-container">
+
+     <div class="footer-links">
+      <a href="#" data-ru="Контакты" data-kg="Контакттар" data-en="Contacts">Контакты</a>
+      <a href="#" data-ru="Обратная связь" data-kg="Байланышуу" data-en="Feeldback">Обратная связь</a>
+      <a href="#" data-ru="Рассылка" data-kg="Катталуу" data-en="Subscription">Рассылка</a>
+      <a href="#" data-ru="Уведомление о рекламе" data-kg="Жарнама" data-en="Ads">Уведомление о рекламе</a>
+      <a href="#" data-ru="FAQ" data-kg="FAQ" data-en="FAQ" >FAQ</a>
+      <a href="#" data-ru="Вакансии" data-kg="Жумуш" data-en="Vacancies" >Вакансии</a>
+      <a href="#" data-ru="Правила посещения кинотеатров" data-kg=" Кинотеатрга кирүү эрежелери" data-en="Rules" >Правила посещения кинотеатров</a>
+    </div>
+
+    <div class="footer-copy">
+      © Cinematica 2026
+    </div>
+
+  </div>
+</footer>
+<button id="back-to-top" title="Наверх" aria-label="Наверх">↑</button>
+<script src="../js/script.js"></script>
+</body>
+</html>

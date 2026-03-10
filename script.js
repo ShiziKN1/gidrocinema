@@ -1,4 +1,4 @@
- let current = 0;
+let current = 0;
     const slides = document.querySelectorAll('.hero-slide');
     const dots   = document.querySelectorAll('.dot');
 
@@ -17,11 +17,17 @@
         e.preventDefault();
         document.querySelectorAll('.lang-link').forEach(l => l.classList.remove('active'));
         link.classList.add('active');
-      });
+      });                                                                   
     });
 
+function showInfo() {
+    document.getElementById("info").style.display = "block";
+}
 
-    function changeLang(lang) {
+function closeInfo() {
+    document.getElementById("info").style.display = "none";
+}
+function changeLang(lang) {
   const elements = document.querySelectorAll("[data-ru]");
 
   elements.forEach(el => {
@@ -47,13 +53,4 @@ window.addEventListener("click", function(e){
   if(e.target.id === "filmInfo"){
     document.getElementById("filmInfo").style.display = "none";
   }
-});
-
-
-
-
-
-
-
-
-
+}); 

@@ -7,42 +7,43 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     
     <header class="top-header">
+<a class="logo" href="./index.html">
+    <img class="logo-img" src="./assets/logo.svg" alt="Синематика">
+    <div class="logo-text">
+        <span class="logo-name">ГИДРОСИНЕМА</span>
+        <span class="logo-subtitle">сеть кинотеатров</span>
+    </div>
+</a>
 
-        <a class="logo" href="index.html">
-            <img class="logo-img" src="./WhatsApp Image 2026-02-19 at 18.25.38 1 (1).svg" alt="Синематика">
-            <div class="logo-text">
-                <span class="logo-name">ГИДРОСИНЕМА</span>
-                <span class="logo-subtitle">сеть кинотеатров</span>
-            </div>
-        </a>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
 
         <nav class="menu">
-            <a class="menu-item menu-imax" href="./imax.html">IMAX</a>
-            <a class="menu-item menu-dolby" href="">
+            <a class="menu-item menu-imax" href="./pages/imax.html">IMAX</a>
+            <a class="menu-item menu-dolby" href="./pages/dolby.html">
                 <span class="dolby-logo">DOLBY</span>
                 <span class="dolby-atmos">ATMOS</span>
             </a>
-            <a class="menu-item" href="./film.html">
+            <a class="menu-item" href="./pages/film.html">
                 <svg viewBox="0 0 24 24">
                     <path
                         d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z" />
                 </svg>
                 <span class="label" src  data-ru="Фильмы" data-kg="Тасмалар" data-en="Films" >Фильмы</span>
             </a>
-            <a class="menu-item" href="./cinema.html">
+            <a class="menu-item" href="./pages/cinema.html">
                 <svg viewBox="0 0 24 24">
                     <path
                         d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z" />
                 </svg>
                 <span class="label" data-ru="Кинотеатры" data-kg="Кинотеатырлар" data-en="Cinemas" >Кинотеатры</span>
             </a>
-            <a class="menu-item" href="./anons.html">
+            <a class="menu-item" href="./pages/anons.html">
                 <svg viewBox="0 0 24 24">
                     <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
                 </svg>
@@ -51,32 +52,57 @@
         </nav>
 
         <div class="right-links">
-            <a class="lang-link active" href="#" onclick="changeLang ('ru')" >Рус</a>
-            <a class="lang-link" href="#" onclick="changeLang ('kg')">Кырг</a>
-            <a class="lang-link" href="#" onclick="changeLang ('en')">Eng</a>
-            <a class="login-btn" href="#">Войти</a>
+            <a class="lang-link active" href="#" onclick="changeLang('ru'); return false;">Рус</a>
+            <a class="lang-link" href="#" onclick="changeLang('kg'); return false;">Кырг</a>
+            <a class="lang-link" href="#" onclick="changeLang('en'); return false;">Eng</a>
+            <a class="login-btn" href="#contacts">Войти</a>
         </div>
+
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
 
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav" id="mobileNav">
+        <a class="menu-item menu-imax" href="./imax.html">IMAX</a>
+        <a class="menu-item menu-dolby" href="#">
+            <span>DOLBY ATMOS</span>
+        </a>
+        <a class="menu-item" href="./film.html">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
+                <path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/>
+            </svg>
+            <span class="label" data-i18n="movies">Фильмы</span>
+        </a>
+        <a class="menu-item" href="./cinema.html">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
+                <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/>
+            </svg>
+            <span class="label" data-i18n="cinemas">Кинотеатры</span>
+        </a>
+        <a class="menu-item" href="./anons.html">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
+                <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+            </svg>
+            <span class="label" data-i18n="announcements">Анонсы</span>
+        </a>
+        <div class="mobile-lang">
+            <a class="lang-link active" href="#" data-lang="ru">Рус</a>
+            <a class="lang-link" href="#" data-lang="kg">Кырг</a>
+            <a class="lang-link" href="#" data-lang="en">Eng</a>
+            <a class="login-btn" href="#" data-i18n="login">Войти</a>
+        </div>
+    </nav>
 
-    
+    <!-- Hero Slider -->
     <section class="hero">
-
-
-        <div class="hero-slide active slide-1">
-
-        </div>
-
-
-        <div class="hero-slide slide-2">
-
-        </div>
-
-
-        <div class="hero-slide slide-3">
-
-        </div>
-
+        <div class="hero-slide active slide-1"></div>
+        <div class="hero-slide slide-2"></div>
+        <div class="hero-slide slide-3"></div>
         <button class="hero-nav prev" onclick="changeSlide(-1)">&#8249;</button>
         <button class="hero-nav next" onclick="changeSlide(1)">&#8250;</button>
         <div class="hero-bottom-fade"></div>
@@ -87,13 +113,12 @@
         </div>
     </section>
 
-
     <div class="page-content">
-        <h2 class="section-title" data-ru="Сегодня в кино" data-kg="Бугун кинодо" data-en="Today">Сегодня в кино</h2>
+        <h2 class="section-title" data-i18n="now_playing">Сегодня в кино</h2>
         <div class="movies-grid">
 
            
-        <a href="">    <div class="movie-card">
+        <a href="./pages/film3.html">    <div class="movie-card">
                 <img class="movie-poster"
                     src="https://cinematica.kg/uploads/movies/5044b182-cf39-4b48-a798-bc8eb4dba717.jpg/300/430"
                     alt="Фильм 1">
@@ -105,7 +130,7 @@
             </div>
 </a>
             
-            <a href=""><div class="movie-card">
+            <a href="./pages/film11.html"><div class="movie-card">
                 <img class="movie-poster"
                     src="https://cinematica.kg/uploads/movies/633c20f8-4e83-4b66-87a6-1696766fe438.jpg/300/430"
                     alt="Фильм 2">
@@ -117,7 +142,7 @@
             </div></a>
 
 
-        <a href="">    <div class="movie-card">
+        <a href="./pages/film2.html">    <div class="movie-card">
                 <img class="movie-poster"
                     src="https://cinematica.kg/uploads/movies/e18c2630-c2ea-4762-a845-567126164220.jpg/300/430"
                     alt="Фильм 3">
@@ -127,7 +152,7 @@
                 </div>
             </div>
 </a>      
-            <a href=""><div class="movie-card">
+            <a href="./pages/film12.html"><div class="movie-card">
                 <img class="movie-poster"
                     src="https://cinematica.kg/uploads/movies/599afbd7-2808-4201-b060-d494c1836bfc.jpg/300/430"
                     alt="Фильм 4">
@@ -137,7 +162,7 @@
                 </div>
             </div>
 </a>
-         <a href="./film1.html">   
+         <a href="./pages/film1.html">   
             <div class="movie-card">
                 <img class="movie-poster"
                     src="https://cinematica.kg/uploads/movies/10a776df-5b97-4f4f-90a9-da286b2ea7fd.jpg/300/430"
@@ -149,50 +174,31 @@
             </div>
 </a>
 
-            <a href=""><div class="movie-card">
-                <img class="movie-poster"
-                    src="https://cinematica.kg/uploads/movies/c4663c15-0f5e-4eaa-a0d3-f8e5589f07fc.jpg/300/430"
-                    alt="Фильм 6">
-                <div class="movie-info">
-                    <div class="movie-title">Рыбка унывака. Подводное приключение</div>
-                    <div class="movie-meta">Жанр: мультфильм<br><br>Жылы: 2026</div>
-                </div>
-            </div></a>
         
-        <a href="">
-            <div class="movie-card">
-                <img class="movie-poster"
-                    src="https://cinematica.kg/uploads/movies/1eb8519b-8853-4b99-be3e-26c0a3c90eaf.jpg/300/430"
-                    alt="Фильм 7">
-                <div class="movie-info">
-                    <div class="movie-title">На помощь!(18+)</div>
-                    <div class="movie-meta">Жанр:ужасы, триллер <br><br>Жылы: 2025</div>
-                </div>
-            </div>
-</a>
+   
 
-         <a href="">   <div class="movie-card">
+         <a href="./pages/film14.html">   <div class="movie-card">
                 <img class="movie-poster"
-                    src="https://cinematica.kg/uploads/movies/84958a2d-9c6a-43c5-99a9-73438d50f0a5.jpg/300/430"
+                    src="https://cinematica.kg/uploads/movies/9a9e88ca-bc1f-4f8b-8ddb-565d06f71659.jpg/300/430"
                     alt="Фильм 8">
                 <div class="movie-info">
-                    <div class="movie-title">Гренландия 2: Миграция</div>
-                    <div class="movie-meta">Жанр: Фильм-катастрофа <br><br>Жылы: 2026</div>
+                    <div class="movie-title">Татынакайым</div>
+                    <div class="movie-meta">Жанр: комедия,мелодрама <br><br>Жылы: 2026</div>
                 </div>
             </div>
 </a>
 
-           <a href=""> <div class="movie-card">
+           <a href="./pages/film4.html"> <div class="movie-card">
                 <img class="movie-poster"
-                    src="https://i.ibb.co/DgK2kbfs/kl2.jpg"
+                    src="https://cinematica.kg/uploads/movies/84cef218-de5b-4243-a451-5b13863f730b.jpg/300/430"
                     alt="Фильм 9">
                 <div class="movie-info">
-                    <div class="movie-title">Кыял </div>
-                    <div class="movie-meta">Драма <br><br>Жылы: 2026</div>
+                    <div class="movie-title">Грозовой перевал</div>
+                    <div class="movie-meta">Драма,мелодрама <br><br>Жылы: 2026</div>
                 </div>
             </div></a>
 
-           <a href="">    <div class="movie-card">
+           <a href="./pages/film16.html">    <div class="movie-card">
                 <img class="movie-poster"
                     src="https://cinematica.kg/uploads/movies/8c745e49-f7b9-4b44-bda9-14a6a13b48ea.jpg/300/430"
                     alt="Фильм 10">
@@ -202,7 +208,7 @@
                 </div>
             </div>
 </a>
-            <a href="#">
+            <a href="./pages/film18.html">
                  <div class="movie-card">
                 <img class="movie-poster"
                     src="https://cinematica.kg/uploads/movies/f4331e1e-ece7-417f-8cb2-5c673fa03252.jpg/300/430"
@@ -214,33 +220,118 @@
             </div>
             </a>
 
+            <a href=""><div class="movie-card">
+                <img class="movie-poster" src="https://cinematica.kg/uploads/movies/e18c2630-c2ea-4762-a845-567126164220.jpg/300/430" alt="Фильм 3">
+                <div class="movie-info">
+                    <div class="movie-title">Махабатым</div>
+                    <div class="movie-meta">Жанр: комедия, мелодрама<br><br>Жылы: 2026</div>
+                </div>
+            </div></a>
 
+            <a href="./film12.html">
+                <div class="movie-card">
+                    <img class="movie-poster" src="https://cinematica.kg/uploads/movies/599afbd7-2808-4201-b060-d494c1836bfc.jpg/300/430" alt="Фильм 4">
+                    <div class="movie-info">
+                        <div class="movie-title">Улыбка. Зарождение зла</div>
+                        <div class="movie-meta">Жанр: ужасы<br><br>Жылы: 2026</div>
+                    </div>
+                </div>
+            </a>
 
+            <a href="./film1.html">
+                <div class="movie-card">
+                    <img class="movie-poster" src="https://cinematica.kg/uploads/movies/10a776df-5b97-4f4f-90a9-da286b2ea7fd.jpg/300/430" alt="Фильм 5">
+                    <div class="movie-info">
+                        <div class="movie-title">Убежище</div>
+                        <div class="movie-meta">Жанр: боевик, триллер<br><br>Жылы: 2026</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./film14.html">
+                <div class="movie-card">
+                    <img class="movie-poster" src="https://cinematica.kg/uploads/movies/9a9e88ca-bc1f-4f8b-8ddb-565d06f71659.jpg/300/430" alt="Фильм 6">
+                    <div class="movie-info">
+                        <div class="movie-title">Татынакайым</div>
+                        <div class="movie-meta">Жанр: комедия, мелодрама<br><br>Жылы: 2026</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./film4.html">
+                <div class="movie-card">
+                    <img class="movie-poster" src="https://cinematica.kg/uploads/movies/84cef218-de5b-4243-a451-5b13863f730b.jpg/300/430" alt="Фильм 7">
+                    <div class="movie-info">
+                        <div class="movie-title">Грозовой перевал</div>
+                        <div class="movie-meta">Жанр: драма, мелодрама<br><br>Жылы: 2026</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./film16.html">
+                <div class="movie-card">
+                    <img class="movie-poster" src="https://cinematica.kg/uploads/movies/8c745e49-f7b9-4b44-bda9-14a6a13b48ea.jpg/300/430" alt="Фильм 8">
+                    <div class="movie-info">
+                        <div class="movie-title">Горничная</div>
+                        <div class="movie-meta">Психологический триллер<br><br>Жылы: 2026</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href=""><div class="movie-card">
+                <img class="movie-poster" src="https://i.ibb.co/DgK2kbfs/kl2.jpg" alt="Фильм 9">
+                <div class="movie-info">
+                    <div class="movie-title">Кыял</div>
+                    <div class="movie-meta">Драма<br><br>Жылы: 2026</div>
+                </div>
+            </div></a>
+
+            <a href=""><div class="movie-card">
+                <img class="movie-poster" src="https://cinematica.kg/uploads/movies/8c745e49-f7b9-4b44-bda9-14a6a13b48ea.jpg/300/430" alt="Фильм 10">
+                <div class="movie-info">
+                    <div class="movie-title">Горничная</div>
+                    <div class="movie-meta">Психологический триллер<br><br>Жылы: 2026</div>
+                </div>
+            </div></a>
+
+            <a href="#"><div class="movie-card">
+                <img class="movie-poster" src="https://cinematica.kg/uploads/movies/f4331e1e-ece7-417f-8cb2-5c673fa03252.jpg/300/430" alt="Фильм 11">
+                <div class="movie-info">
+                    <div class="movie-title">Полчанки</div>
+                    <div class="movie-meta">Комедия<br><br>Жылы: 2026</div>
+                </div>
+            </a>
 
         </div>
     </div>
 
+<section id="contacts" class="contacts-section">
+  <div class="footer-container">
+    <h3 class="contacts-title" data-ru="Контакты" data-kg="Контакттар" data-en="Contacts">Контакты</h3>
+    <p class="contacts-text">0 (312) 90 38 88 · Бишкек, Кыргызстан</p>
+    <p class="contacts-text">Следите за нами: WhatsApp, Telegram, Instagram</p>
+  </div>
+</section>
 <footer class="site-footer">
   <div class="footer-container">
-
     <div class="footer-links">
-      <a href="#" data-ru="Контакты" data-kg="Контакттар" data-en="Contacts">Контакты</a>
-      <a href="#" data-ru="Обратная связь" data-kg="Байланышуу" data-en="Feeldback">Обратная связь</a>
-      <a href="#" data-ru="Рассылка" data-kg="Катталуу" data-en="Subscription">Рассылка</a>
-      <a href="#" data-ru="Уведомление о рекламе" data-kg="Жарнама" data-en="Ads">Уведомление о рекламе</a>
-      <a href="#" data-ru="FAQ" data-kg="FAQ" data-en="FAQ" >FAQ</a>
-      <a href="#" data-ru="Вакансии" data-kg="Жумуш" data-en="Vacancies" >Вакансии</a>
-      <a href="#" data-ru="Правила посещения кинотеатров" data-kg=" Кинотеатрга кирүү эрежелери" data-en="Rules" >Правила посещения кинотеатров</a>
+      <a href="#contacts" data-ru="Контакты" data-kg="Контакттар" data-en="Contacts">Контакты</a>
+      <a href="#contacts" data-ru="Обратная связь" data-kg="Байланышуу" data-en="Feeldback">Обратная связь</a>
+      <a href="#contacts" data-ru="Рассылка" data-kg="Катталуу" data-en="Subscription">Рассылка</a>
+      <a href="#contacts" data-ru="Уведомление о рекламе" data-kg="Жарнама" data-en="Ads">Уведомление о рекламе</a>
+      <a href="#contacts" data-ru="FAQ" data-kg="FAQ" data-en="FAQ">FAQ</a>
+      <a href="#contacts" data-ru="Вакансии" data-kg="Жумуш" data-en="Vacancies">Вакансии</a>
+      <a href="#contacts" data-ru="Правила посещения кинотеатров" data-kg="Кинотеатрга кирүү эрежелери" data-en="Rules">Правила посещения кинотеатров</a>
     </div>
-
     <div class="footer-copy">
       © Cinematica 2026
     </div>
-
   </div>
 </footer>
 
-    <script src="./script.js"></script>
+<button id="back-to-top" title="Наверх">↑</button>
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
