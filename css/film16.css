@@ -277,12 +277,7 @@ button{
     color:white;
 }
 
-.seances{
-  max-width: 1570px;
-  margin: 0 auto;
-  padding: 0px 15px;
 
-}
 
 .internet{
   max-width: 1570px;
@@ -293,46 +288,63 @@ button{
   gap: 30px;
 }
 
-.one{
-    display: flex;
-    color: black;
-    margin-top: 10px;
-  
-}
-.one button{
-  margin-left: 220px;
-  width: 55px;
-  height: 30px;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  background-color: rgb(38, 131, 146);
-  
+.seances{
+  max-width: 1570px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-.one p{
-    margin-left: 20px;
-}
 .seans-11{
-    color: black;
-    margin-top: 50px;
-    border-radius: 5px;
-    width: 1550px;
+  color: black;
+  margin-top: 40px;
+  border-radius: 5px;
+  width: 100%;
+  background: #f5f5f5;
+  padding-bottom: 15px;
 }
-
-.buttons1{
-    margin-left: 200px;
-    
-}
-
 
 .zal1{
-color: white;
-background-color: rgb(53, 112, 175);
+  color: white;
+  background-color: rgb(53, 112, 175);
+  padding: 10px 0;
 }
 
 .zal1 h1{
-    margin-left: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.one{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  padding: 0 20px;
+}
+
+.one p{
+  margin: 0;
+  font-size: 16px;
+}
+
+.buttons1{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.buttons1 button{
+  width: 60px;
+  height: 32px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(38, 131, 146);
+}
+
+.buttons-a{
+  color: white;
+  text-decoration: none;
 }
 
 
