@@ -194,21 +194,6 @@ body {
      text-decoration: underline;
  }
 
- .login-btn {
-     color: white;
-     text-decoration: none;
-     font-size: 14px;
-     font-weight: 600;
-     padding: 5px 14px;
-     margin-left: 6px;
-     border-radius: 3px;
-     transition: 0.2s;
- }
-
- .login-btn:hover {
-     background: rgba(255, 255, 255, 0.15);
- }
-
  
 @media (max-width: 768px) {
   .top-header {
