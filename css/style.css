@@ -144,32 +144,6 @@ body {
      white-space: nowrap;
  }
 
- .menu-imax {
-     font-family: 'Oswald', sans-serif;
-     font-size: 22px;
-     font-weight: 700;
-     letter-spacing: 1px;
-     padding: 0 24px;
- }
-
- .menu-dolby {
-     padding: 0 24px;
-     text-align: center;
- }
-
- .menu-dolby .dolby-logo {
-     font-family: 'Oswald', sans-serif;
-     font-size: 15px;
-     font-weight: 700;
-     line-height: 1;
- }
-
- .menu-dolby .dolby-atmos {
-     font-size: 10px;
-     letter-spacing: 2px;
-     color: rgba(255, 255, 255, 0.85);
- }
-
  .right-links {
      display: flex;
      align-items: center;
@@ -1320,44 +1294,6 @@ background-color: rgb(53, 112, 175);
 #back-to-top:focus {
     outline: 2px solid rgba(255,255,255,0.6);
     outline-offset: 2px;
-}
-
-/* ——— Dolby Atmos страница ——— */
-.dolby-page { padding-bottom: 60px; }
-.dolby-banner {
-  height: 200px;
-  background: linear-gradient(135deg, #1a0a2e 0%, #2d1b4e 50%, #1a0a2e 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 62px;
-}
-.dolby-banner-overlay { text-align: center; }
-.dolby-heading {
-  font-family: 'Oswald', sans-serif;
-  font-size: 32px;
-  letter-spacing: 4px;
-  color: #e0c3ff;
-  margin: 0 0 8px 0;
-}
-.dolby-tagline { font-size: 14px; color: rgba(255,255,255,0.7); margin: 0; }
-.dolby-wrapper {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-.dolby-title {
-  font-family: 'Oswald', sans-serif;
-  font-size: 22px;
-  letter-spacing: 2px;
-  margin-bottom: 16px;
-  color: rgba(255,255,255,0.95);
-}
-.dolby-desc {
-  font-size: 15px;
-  line-height: 1.6;
-  color: rgba(255,255,255,0.85);
-  margin-bottom: 12px;
 }
 
 @media (max-width: 576px) {

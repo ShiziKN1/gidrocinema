@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
@@ -8,6 +8,7 @@
 <title>Махабатым</title>
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/film2.css">
+
 </head>
 <body class="body-3">
   
@@ -23,7 +24,7 @@
 </a>
 
         <nav class="menu">
-            <a class="menu-item menu-imax" href="#">IMAX</a><a class="menu-item" href="./film.html">
+            <a class="menu-item" href="./film.html">
                 <svg viewBox="0 0 24 24">
                     <path
                         d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z" />
@@ -49,7 +50,6 @@
             <a class="lang-link active" href="#" onclick="changeLang ('ru')" >Рус</a>
             <a class="lang-link" href="#" onclick="changeLang ('kg')" >Кырг</a>
             <a class="lang-link" href="#" onclick="changeLang ('en')" >Eng</a>
-
         </div>
     </header>
 
@@ -71,8 +71,16 @@
 
                 <div class="btn-pack-x" style="margin-bottom: 50px;">
                 
-<button class="btn-alpha">О ФИЛЬМЕ</button>
-                    
+<div id="filmInfo" class="film-info-overlay">
+        <div class="film-info-box">
+            <span id="closeInfo" class="close-info" aria-label="Закрыть">×</span>
+            <h3 data-ru="Убежище" data-kg="Убежище" data-en="Shelter">Убежище</h3>
+            <p><b data-ru="Год:" data-kg="Жыл:" data-en="Year:">Год:</b> 2026</p>
+            <p><b data-ru="Жанр:" data-kg="Жанр:" data-en="Genre:">Жанр:</b> боевик, триллер</p>
+            <p><b data-ru="Длительность:" data-kg="Узундук:" data-en="Duration:">Длительность:</b> —</p>
+            <p data-ru="Её безопасность — его миссия. Детали сюжета уточняются." data-kg="Анын коопсуздугу - анын миссиясы. Сюжеттин деталдары тактала турган." data-en="Her safety is his mission. Plot details to be specified.">Её безопасность — его миссия. Детали сюжета уточняются.</p>
+        </div>
+    </div>             
                    
 
 
@@ -82,17 +90,6 @@
             </div>
         </div>
     </section>
-
-    <div id="filmInfo" class="film-info-overlay">
-        <div class="film-info-box">
-            <span id="closeInfo" class="close-info" aria-label="Закрыть">×</span>
-            <h3 data-ru="Махабатым" data-kg="Махабатым" data-en="My Love">Махабатым</h3>
-            <p><b data-ru="Год:" data-kg="Жыл:" data-en="Year:">Год:</b> 2026</p>
-            <p><b data-ru="Жанр:" data-kg="Жанр:" data-en="Genre:">Жанр:</b> комедия</p>
-            <p><b data-ru="Длительность:" data-kg="Узундук:" data-en="Duration:">Длительность:</b> 1ч 45мин</p>
-            <p data-ru="Учёные разработали технологию, позволяющую переносить человеческое сознание в реалистичных роботизированных животных. Мейбл получает доступ к технологии и переносится в тело робота-бобра, чтобы исследовать животный мир." data-kg="Окумуштуулар адамдын санасын реалисттик роботтук жаныбарларга өткөрүүгө мүмкүндүк берүүчү технология иштеп чыгышты. Мейбл технологияга жетип, робот-бобрдун денесине өтөт, жаныбарлар дүйнөсүн изилдөө үчүн." data-en="Scientists have developed a technology that allows transferring human consciousness into realistic robotic animals. Mabel gains access to the technology and transfers into the body of a robot beaver to explore the animal world.">Учёные разработали технологию, позволяющую переносить человеческое сознание в реалистичных роботизированных животных. Мейбл получает доступ к технологии и переносится в тело робота-бобра, чтобы исследовать животный мир.</p>
-        </div>
-    </div>
 
 </div>
 <div class="seances">
@@ -162,12 +159,6 @@
 
 </body>
 </html>
-
-
-
-
-
-
 
 
 

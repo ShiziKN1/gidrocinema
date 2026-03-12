@@ -1,4 +1,4 @@
-.body-3{
+﻿.body-3{
     background:#ffffff; 
 }
 
@@ -15,7 +15,7 @@
      z-index: 100;
      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
      position: fixed; 
-
+     width: 1500px;
  }
 
 
@@ -38,7 +38,10 @@ button{
      text-decoration: none;
      flex-shrink: 0;
  }
- .buttons-a{  display: inline-flex;  align-items: center;  justify-content: center;  width: 60px;  height: 32px;  background: rgb(38, 131, 146);  border-radius: 5px;  color: white;  text-decoration: none;}
+ .buttons-a{
+  text-decoration: none;
+  color: white;
+}
 
 
  .logo-img {
@@ -109,14 +112,6 @@ button{
      white-space: nowrap;
  }
 
- .menu-imax {
-     font-family: 'Oswald', sans-serif;
-     font-size: 22px;
-     font-weight: 700;
-     letter-spacing: 1px;
-     padding: 0 24px;
- }
-
  .right-links {
      display: flex;
      align-items: center;
@@ -143,21 +138,6 @@ button{
 
  .lang-link.active {
      text-decoration: underline;
- }
-
- .login-btn {
-     color: white;
-     text-decoration: none;
-     font-size: 14px;
-     font-weight: 600;
-     padding: 5px 14px;
-     margin-left: 6px;
-     border-radius: 3px;
-     transition: 0.2s;
- }
-
- .login-btn:hover {
-     background: rgba(255, 255, 255, 0.15);
  }
 
 
@@ -417,51 +397,58 @@ button{
         width:100%;
     }
 
-    .seances{
-        padding: 0px 10px;
-    }
-
-    .one{
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .one button{
-        margin-left: 0;
-        width: auto;
-        padding: 5px 10px;
-    }
-
-    .one p{
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .buttons1{
-        margin-left: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .seans-11{
-        width: 100%;
-    }
-
-    .zal1 h1{
-        margin-left: 10px;
-        font-size: 20px;
-    }
 
    
 
 }
+/* BURGER MENU */
 
+.burger{
+    display:none;
+    font-size:28px;
+    background:none;
+    border:none;
+    color:white;
+    cursor:pointer;
+}
 
+/* мобильная версия */
 
+@media(max-width:768px){
 
+.menu{
+    position:fixed;
+    top:62px;
+    left:-100%;
+    width:220px;
+    height:100%;
+    background:#1a798a;
+    flex-direction:column;
+    align-items:flex-start;
+    padding-top:20px;
+    transition:0.3s;
+}
+
+.menu.active{
+    left:0;
+}
+
+.menu-item{
+    width:100%;
+    padding:15px 20px;
+    flex-direction:row;
+    gap:10px;
+}
+
+.burger{
+    display:block;
+}
+
+.right-links{
+    margin-left:auto;
+}
+
+}
 
 
 

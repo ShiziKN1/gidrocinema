@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 .body-3{
 
+=======
+﻿.body-3{
+>>>>>>> 0f13dc055297dd19e452089bcd2f6ae13b5449ef
     background:#ffffff; 
 }
 
@@ -110,14 +114,6 @@ button{
      white-space: nowrap;
  }
 
- .menu-imax {
-     font-family: 'Oswald', sans-serif;
-     font-size: 22px;
-     font-weight: 700;
-     letter-spacing: 1px;
-     padding: 0 24px;
- }
-
  .right-links {
      display: flex;
      align-items: center;
@@ -144,21 +140,6 @@ button{
 
  .lang-link.active {
      text-decoration: underline;
- }
-
- .login-btn {
-     color: white;
-     text-decoration: none;
-     font-size: 14px;
-     font-weight: 600;
-     padding: 5px 14px;
-     margin-left: 6px;
-     border-radius: 3px;
-     transition: 0.2s;
- }
-
- .login-btn:hover {
-     background: rgba(255, 255, 255, 0.15);
  }
 
 
@@ -365,6 +346,7 @@ button{
         width:100%;
     }
 }
+
 
 
 

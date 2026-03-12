@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
@@ -7,6 +7,7 @@
 <title>Улыбка. Зарождение зла</title>
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/film12.css">
+
 </head>
 <body class="body-3">
 
@@ -22,7 +23,7 @@
 </a>
 
         <nav class="menu">
-            <a class="menu-item menu-imax" href="#">IMAX</a><a class="menu-item" href="./film.html">
+            <a class="menu-item" href="./film.html">
                 <svg viewBox="0 0 24 24">
                     <path
                         d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z" />
@@ -48,7 +49,6 @@
             <a class="lang-link active" href="#" onclick="changeLang ('ru')" >Рус</a>
             <a class="lang-link" href="#" onclick="changeLang ('kg')" >Кырг</a>
             <a class="lang-link" href="#" onclick="changeLang ('en')" >Eng</a>
-
         </div>
     </header>
 
@@ -69,23 +69,30 @@
 </div>
 
 <div class="btn-pack-x" style="margin-bottom: 50px;">
-<button class="btn-alpha">О ФИЛЬМЕ</button>
+<button onclick="showInfo()">О фильме</button>
+
+<div id="info">
+<h3>Улыбка: Зарождение зла</h3>
+<p><b>Год:</b> 2026</p>
+<p><b>Режиссер:</b> Өмүралиев Мирлан, Эркинов Темирлан</p>
+<p><b>Жанр:</b>триллер, психологический хоррор</p>
+<p><b>Длительность:</b> 1ч 45мин</p>
+
+<p>
+Учёные разработали технологию, позволяющую переносить человеческое <br>
+сознание в реалистичных роботизированных животных. Мейбл получает <br>
+доступ к технологии и переносится в тело робота-бобра, чтобы <br>
+исследовать животный мир.
+</p>
+
+<button onclick="closeInfo()">X</button>
+
+</div>
 <a href="https://youtu.be/qSwxrBWXQ38?si=SR7enDZmlOiVrkbA"><button class="btn-beta" data-ru="ТРЕЙЛЕР" data-kg="ТРЕЙЛЕР" data-en="TRAILER">▶  ТРЕЙЛЕР</button> </a>
 </div>
 </div>
 </div>
 </section>
-
-    <div id="filmInfo" class="film-info-overlay">
-        <div class="film-info-box">
-            <span id="closeInfo" class="close-info" aria-label="Закрыть">×</span>
-            <h3>Улыбка: Зарождение зла</h3>
-            <p><b>Год:</b> 2026</p>
-            <p><b>Жанр:</b>триллер, психологический хоррор</p>
-            <p><b>Длительность:</b> 1ч 45мин</p>
-            <p>Учёные разработали технологию, позволяющую переносить человеческое сознание в реалистичных роботизированных животных. Мейбл получает доступ к технологии и переносится в тело робота-бобра, чтобы исследовать животный мир.</p>
-        </div>
-    </div>
 </div>
 
 <div class="seances">
@@ -147,8 +154,6 @@
 <script src="../js/script.js"></script>
 </body>
 </html>
-
-
 
 
 
