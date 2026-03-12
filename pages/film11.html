@@ -25,11 +25,6 @@
 </a>
 
         <nav class="menu">
-            <a class="menu-item menu-imax" href="#">IMAX</a>
-            <a class="menu-item menu-dolby" href="#">
-                <span class="dolby-logo">DOLBY</span>
-                <span class="dolby-atmos">ATMOS</span>
-            </a> 
             <a class="menu-item" href="./film.html">
                 <svg viewBox="0 0 24 24">
                     <path
@@ -56,7 +51,6 @@
             <a class="lang-link active" href="#" onclick="changeLang ('ru')" >Рус</a>
             <a class="lang-link" href="#" onclick="changeLang ('kg')" >Кырг</a>
             <a class="lang-link" href="#" onclick="changeLang ('en')" >Eng</a>
-            <a class="login-btn" href="#">Войти</a>
         </div>
     </header>
 
@@ -77,23 +71,27 @@
 </div>
 
 <div class="btn-pack-x" style="margin-bottom: 50px;">
-<button class="btn-alpha">О ФИЛЬМЕ</button>
+<button onclick="showInfo()">О фильме</button>
+
+<div id="info">
+<h3>Рай 2: письмо моей матери</h3>
+<p><b>Год:</b> 2026</p>
+<p><b>Режиссер:</b> Өмүралиев Мирлан, Эркинов Темирлан</p>
+<p><b>Жанр:</b>Драма</p>
+<p><b>Длительность:</b>101минута</p>
+
+<p>
+«Бейиш 2: Апама кат» продолжает драматическую и трогательную историю, <br> начатую в первой части, углубляя и расширяя её смысловое содержание. <br> В центре повествования по-прежнему остаются материнская любовь, <br> духовные ценности и человеческая благодарность, <br> которые проходят через судьбы героев красной нитью.
+</p>
+
+<button onclick="closeInfo()">X</button>
+
+</div>
 <a href="https://youtu.be/XD5Y0FCHzn8?si=HHJmPj4EBoOXpngp"><button class="btn-beta">▶  ТРЕЙЛЕР</button></a>
 </div>
 </div>
 </div>
 </section>
-
-    <div id="filmInfo" class="film-info-overlay">
-        <div class="film-info-box">
-            <span id="closeInfo" class="close-info" aria-label="Закрыть">×</span>
-            <h3>Рай 2: письмо моей матери</h3>
-            <p><b>Год:</b> 2026</p>
-            <p><b>Жанр:</b>Драма</p>
-            <p><b>Длительность:</b>101минута</p>
-            <p>«Бейиш 2: Апама кат» продолжает драматическую и трогательную историю, начатую в первой части, углубляя и расширяя её смысловое содержание. В центре повествования по-прежнему остаются материнская любовь, духовные ценности и человеческая благодарность, которые проходят через судьбы героев красной нитью.</p>
-        </div>
-    </div>
 </div>
 
 <div class="seances">
@@ -104,9 +102,9 @@
         
         <p>Рай под ногами матерей</p>
         <div class="buttons1">
-            <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Рай под ногами матерей, на 20:35.Свободно или нет?">20:35</a></button>
-            <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Рай под ногами матерей, на 22:15.Свободно или нет?">22:15</a></button>
-            <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Рай под ногами матерей, на 23:55.Свободно или нет?">23:55</a></button>
+            <a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Рай под ногами матерей, на 20:35.Свободно или нет?">20:35</a>
+            <a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Рай под ногами матерей, на 22:15.Свободно или нет?">22:15</a>
+            <a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Рай под ногами матерей, на 23:55.Свободно или нет?">23:55</a>
         </div>
        
         </div>
@@ -115,8 +113,8 @@
             <div class="one">
             <p>Рай под ногами матерей</p>
         <div class="buttons1">
-            <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Рай под ногами матерей, на 11:55.Свободно или нет?">11:55</a></button>
-            <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Рай под ногами матерей, на 14:00.Свободно или нет?">14:55</a></button>
+            <a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Рай под ногами матерей, на 11:55.Свободно или нет?">11:55</a>
+            <a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Рай под ногами матерей, на 14:00.Свободно или нет?">14:55</a>
         </div>
        
     </div>
@@ -134,8 +132,8 @@
         
         <p>Рай под ногами матерей</p>
         <div class="buttons1">
-            <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Рай под ногами матерей, на 13:30.Свободно или нет?">13:30</a></button>
-            <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Рай под ногами матерей, на 15:35.Свободно или нет?">15:35</a></button>
+            <a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Рай под ногами матерей, на 13:30.Свободно или нет?">13:30</a>
+            <a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Рай под ногами матерей, на 15:35.Свободно или нет?">15:35</a>
         </div>
        
         </div>
@@ -154,3 +152,13 @@
 <script src="../js/script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+

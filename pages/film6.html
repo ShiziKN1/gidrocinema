@@ -20,11 +20,6 @@
 </a>
 
         <nav class="menu">
-            <a class="menu-item menu-imax" href="#">IMAX</a>
-            <a class="menu-item menu-dolby" href="#">
-                <span class="dolby-logo">DOLBY</span>
-                <span class="dolby-atmos">ATMOS</span>
-            </a> 
             <a class="menu-item" href="./film.html">
                 <svg viewBox="0 0 24 24">
                     <path
@@ -51,7 +46,6 @@
             <a class="lang-link active" href="#" onclick="changeLang ('ru')" >Рус</a>
             <a class="lang-link" href="#" onclick="changeLang ('kg')" >Кырг</a>
             <a class="lang-link" href="#" onclick="changeLang ('en')" >Eng</a>
-            <a class="login-btn" href="#">Войти</a>
         </div>
     </header>
 
@@ -72,24 +66,27 @@
 </div>
 
 <div class="btn-pack-x" style="margin-bottom: 50px;">
-<button class="btn-alpha">О ФИЛЬМЕ</button>
+<button onclick="showInfo()">О фильме</button>
+
+<div id="info">
+<h3>Аян</h3>
+<p><b>Год:</b> 2026</p>
+<p><b>Режиссер:</b>Ырыскелди Артелбеков</p>
+<p><b>Жанр:</b>Психологическая драма</p>
+<p><b>Длительность:</b>1 час 17 минут</p>
+
+<p>
+«Аян» — фильм о женщине, которая чувствует себя потерянной. <br> В семье все молчат, и она остаётся одна со своими чувствами.  <br>С виду у неё всё хорошо, но внутри ей пусто и тяжело.  <br>Одиночество в браке и невысказанные эмоции постепенно приводят её к депрессии.
+</p>
+
+<button onclick="closeInfo()">X</button>
+
+</div>
  <button class="btn-beta" data-ru="ТРЕЙЛЕР" data-kg="ТРЕЙЛЕР" data-en="TRAILER">▶ ТРЕЙЛЕР</button>
 </div>
 </div>
 </div>
 </section>
-
-    <div id="filmInfo" class="film-info-overlay">
-        <div class="film-info-box">
-            <span id="closeInfo" class="close-info" aria-label="Закрыть">×</span>
-            <h3>Аян</h3>
-            <p><b>Год:</b> 2026</p>
-            <p><b>Жанр:</b>Психологическая драма</p>
-            <p><b>Длительность:</b>1 час 17 минут</p>
-            <p>«Аян» — фильм о женщине, которая чувствует себя потерянной. В семье все молчат, и она остаётся одна со своими чувствами. С виду у неё всё хорошо, но внутри ей пусто и тяжело. Одиночество в браке и невысказанные эмоции постепенно приводят её к депрессии.</p>
-        </div>
-    </div>
-
 </div>
 
 <div class="seances">
@@ -100,9 +97,9 @@
         
         <p>Аян</p>
         <div class="buttons1">
-            <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Аян, на 20:35.Свободно или нет?">20:35</a></button>
-            <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Аян, на 22:10.Свободно или нет?">22:10</a></button>
-            <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Аян, на 23:55.Свободно или нет?">23:55</a></button>
+            <a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Аян, на 20:35.Свободно или нет?">20:35</a>
+            <a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Аян, на 22:10.Свободно или нет?">22:10</a>
+            <a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Аян, на 23:55.Свободно или нет?">23:55</a>
         </div>
        
         </div>
@@ -111,8 +108,8 @@
             <div class="one">
             <p>Аян </p>
         <div class="buttons1">
-            <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Аян, на 11:55.Свободно или нет?">11:55</a></button>
-            <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Аян, на 14:00.Свободно или нет?">14:00</a></button>
+            <a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Аян, на 11:55.Свободно или нет?">11:55</a>
+            <a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Аян, на 14:00.Свободно или нет?">14:00</a>
         </div>
        
     </div>
@@ -130,8 +127,8 @@
         
         <p>Аян </p>
         <div class="buttons1">
-            <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Аян, на 13:30.Свободно или нет?">13:30</a></button>
-            <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Аян, на 15:35.Свободно или нет?">15:35</a></button>
+            <a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Аян, на 13:30.Свободно или нет?">13:30</a>
+            <a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Аян, на 15:35.Свободно или нет?">15:35</a>
         </div>
        
         </div>
@@ -149,3 +146,13 @@
    <script src="../js/script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+

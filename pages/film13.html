@@ -25,11 +25,6 @@
 </a>
 
         <nav class="menu">
-            <a class="menu-item menu-imax" href="#">IMAX</a>
-            <a class="menu-item menu-dolby" href="#">
-                <span class="dolby-logo">DOLBY</span>
-                <span class="dolby-atmos">ATMOS</span>
-            </a> 
             <a class="menu-item" href="./film.html">
                 <svg viewBox="0 0 24 24">
                     <path
@@ -56,7 +51,6 @@
             <a class="lang-link active" href="#" onclick="changeLang ('ru')" >Рус</a>
             <a class="lang-link" href="#" onclick="changeLang ('kg')" >Кырг</a>
             <a class="lang-link" href="#" onclick="changeLang ('en')" >Eng</a>
-            <a class="login-btn" href="#">Войти</a>
         </div>
     </header>
 
@@ -77,23 +71,30 @@
 </div>
 
 <div class="btn-pack-x" style="margin-bottom: 50px;">
-<button class="btn-alpha">О ФИЛЬМЕ</button>
+<button onclick="showInfo()">О фильме</button>
+
+<div id="info">
+<h3>Оюн</h3>
+<p><b>Год:</b> 2026</p>
+<p><b>Режиссер:</b> Өмүралиев Мирлан, Эркинов Темирлан</p>
+<p><b>Жанр:</b>триллер, хоррор</p>
+<p><b>Длительность:</b> 1ч 45мин</p>
+
+<p>
+Учёные разработали технологию, позволяющую переносить человеческое <br>
+сознание в реалистичных роботизированных животных. Мейбл получает <br>
+доступ к технологии и переносится в тело робота-бобра, чтобы <br>
+исследовать животный мир.
+</p>
+
+<button onclick="closeInfo()">X</button>
+
+</div>
 <a href="https://youtu.be/xFxXksP3-RM?si=rptuIIqsGYpzoHYd"><button class="btn-beta" data-ru="ТРЕЙЛЕР" data-kg="ТРЕЙЛЕР" data-en="TRAILER">▶  ТРЕЙЛЕР</button></a>
 </div>
 </div>
 </div>
 </section>
-
-    <div id="filmInfo" class="film-info-overlay">
-        <div class="film-info-box">
-            <span id="closeInfo" class="close-info" aria-label="Закрыть">×</span>
-            <h3>Оюн</h3>
-            <p><b>Год:</b> 2026</p>
-            <p><b>Жанр:</b>триллер, хоррор</p>
-            <p><b>Длительность:</b> 1ч 45мин</p>
-            <p>Учёные разработали технологию, позволяющую переносить человеческое сознание в реалистичных роботизированных животных. Мейбл получает доступ к технологии и переносится в тело робота-бобра, чтобы исследовать животный мир.</p>
-        </div>
-    </div>
 </div>
 
 <div class="seances">
@@ -104,9 +105,9 @@
         
         <p>Оюн</p>
         <div class="buttons1">
-            <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Оюн, на 20:35.Свободно или нет?">20:35</a></button>
-            <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Оюн, на 22:10.Свободно или нет?">22:10</a></button>
-            <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Оюн, на 22:55.Свободно или нет?">23:55</a></button>
+            <a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Оюн, на 20:35.Свободно или нет?">20:35</a>
+            <a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Оюн, на 22:10.Свободно или нет?">22:10</a>
+            <a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Оюн, на 22:55.Свободно или нет?">23:55</a>
         </div>
        
         </div>
@@ -115,8 +116,8 @@
             <div class="one">
             <p>Оюн</p>
         <div class="buttons1">
-            <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Оюн, на 11:55.Свободно или нет?">11:55</a></button>
-            <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Оюн, на 14:00.Свободно или нет?">14:00</a></button>
+            <a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Оюн, на 11:55.Свободно или нет?">11:55</a>
+            <a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Оюн, на 14:00.Свободно или нет?">14:00</a>
         </div>
        
     </div>
@@ -134,8 +135,8 @@
         
         <p>Оюн</p>
         <div class="buttons1">
-            <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Оюн, на 13:30.Свободно или нет?">13:30</a></button>
-            <button><a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Оюн, на 15:35.Свободно или нет?">15:35</a></button>
+            <a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Оюн, на 13:30.Свободно или нет?">13:30</a>
+            <a class="buttons-a" href="https://wa.me/996500888360?text=Здраствуйте мне нужен билет на фильм Оюн, на 15:35.Свободно или нет?">15:35</a>
         </div>
        
         </div>
@@ -155,3 +156,13 @@
 <script src="../js/script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+

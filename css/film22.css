@@ -1,4 +1,4 @@
-.body-3{
+﻿.body-3{
     background:#ffffff; 
 }
 
@@ -15,7 +15,7 @@
      z-index: 100;
      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
      position: fixed; 
-     width: 1500px;
+
  }
 
  .logo {
@@ -26,10 +26,7 @@
      flex-shrink: 0;
  }
 
-.buttons-a{
-  text-decoration: none;
-  color: white;
-}
+.buttons-a{  display: inline-flex;  align-items: center;  justify-content: center;  width: 60px;  height: 32px;  background: rgb(38, 131, 146);  border-radius: 5px;  color: white;  text-decoration: none;}
  .logo-img {
      width: 46px;
      height: 46px;
@@ -98,32 +95,6 @@
      white-space: nowrap;
  }
 
- .menu-imax {
-     font-family: 'Oswald', sans-serif;
-     font-size: 22px;
-     font-weight: 700;
-     letter-spacing: 1px;
-     padding: 0 24px;
- }
-
- .menu-dolby {
-     padding: 0 24px;
-     text-align: center;
- }
-
- .menu-dolby .dolby-logo {
-     font-family: 'Oswald', sans-serif;
-     font-size: 15px;
-     font-weight: 700;
-     line-height: 1;
- }
-
- .menu-dolby .dolby-atmos {
-     font-size: 10px;
-     letter-spacing: 2px;
-     color: rgba(255, 255, 255, 0.85);
- }
-
  .right-links {
      display: flex;
      align-items: center;
@@ -150,21 +121,6 @@
 
  .lang-link.active {
      text-decoration: underline;
- }
-
- .login-btn {
-     color: white;
-     text-decoration: none;
-     font-size: 14px;
-     font-weight: 600;
-     padding: 5px 14px;
-     margin-left: 6px;
-     border-radius: 3px;
-     transition: 0.2s;
- }
-
- .login-btn:hover {
-     background: rgba(255, 255, 255, 0.15);
  }
 
 
@@ -340,6 +296,11 @@
         width:100%;
     }
 }
+
+
+
+
+
 
 
 

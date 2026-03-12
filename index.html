@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8" />
@@ -24,11 +24,6 @@
         <div class="hamburger" onclick="toggleMenu()">☰</div>
 
         <nav class="menu">
-            <a class="menu-item menu-imax" href="./pages/imax.html">IMAX</a>
-            <a class="menu-item menu-dolby" href="./pages/dolby.html">
-                <span class="dolby-logo">DOLBY</span>
-                <span class="dolby-atmos">ATMOS</span>
-            </a>
             <a class="menu-item" href="./pages/film.html">
                 <svg viewBox="0 0 24 24">
                     <path
@@ -49,29 +44,23 @@
                 </svg>
                 <span class="label" data-ru="Анонсы" data-kg="Жарыялар" data-en="Announcements" >Анонсы</span>
             </a>
+
+             <a href="./pay.html">
+                <button>Способ оплаты</button>
+            </a>
         </nav>
 
         <div class="right-links">
             <a class="lang-link active" href="#" onclick="changeLang('ru'); return false;">Рус</a>
             <a class="lang-link" href="#" onclick="changeLang('kg'); return false;">Кырг</a>
             <a class="lang-link" href="#" onclick="changeLang('en'); return false;">Eng</a>
-            <a class="login-btn" href="#contacts">Войти</a>
+          
         </div>
-
-        <!-- Hamburger -->
-        <button class="hamburger" id="hamburger" aria-label="Меню">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
     </header>
 
     <!-- Mobile Nav -->
-    <nav class="mobile-nav" id="mobileNav">
-        <a class="menu-item menu-imax" href="./imax.html">IMAX</a>
-        <a class="menu-item menu-dolby" href="#">
-            <span>DOLBY ATMOS</span>
-        </a>
+    <!-- <nav class="mobile-nav" id="mobileNav">
+        
         <a class="menu-item" href="./film.html">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
                 <path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/>
@@ -89,14 +78,13 @@
                 <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
             </svg>
             <span class="label" data-i18n="announcements">Анонсы</span>
-        </a>
-        <div class="mobile-lang">
-            <a class="lang-link active" href="#" data-lang="ru">Рус</a>
-            <a class="lang-link" href="#" data-lang="kg">Кырг</a>
-            <a class="lang-link" href="#" data-lang="en">Eng</a>
-            <a class="login-btn" href="#" data-i18n="login">Войти</a>
-        </div>
-    </nav>
+        </a> -->
+                <!-- <div class="mobile-lang">
+                    <a class="lang-link active" href="#" data-lang="ru">Рус</a>
+                    <a class="lang-link" href="#" data-lang="kg">Кырг</a>
+                    <a class="lang-link" href="#" data-lang="en">Eng</a>
+                </div>
+            </nav> -->
 
     <!-- Hero Slider -->
     <section class="hero">
@@ -308,8 +296,8 @@
 <section id="contacts" class="contacts-section">
   <div class="footer-container">
     <h3 class="contacts-title" data-ru="Контакты" data-kg="Контакттар" data-en="Contacts">Контакты</h3>
-    <p class="contacts-text">0 (312) 90 38 88 · Бишкек, Кыргызстан</p>
-    <p class="contacts-text">Следите за нами: WhatsApp, Telegram, Instagram</p>
+    <p class="contacts-text">0 (500) 88 83 60 · Кара-куль, Кыргызстан</p>
+    <p class="contacts-text">Следите за нами: WhatsApp, Instagram</p>
   </div>
 </section>
 <footer class="site-footer">
@@ -335,3 +323,4 @@
 </body>
 
 </html>
+

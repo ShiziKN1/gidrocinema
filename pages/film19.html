@@ -21,11 +21,6 @@
 </a>
 
         <nav class="menu">
-            <a class="menu-item menu-imax" href="#">IMAX</a>
-            <a class="menu-item menu-dolby" href="#">
-                <span class="dolby-logo">DOLBY</span>
-                <span class="dolby-atmos">ATMOS</span>
-            </a> 
             <a class="menu-item" href="./film.html">
                 <svg viewBox="0 0 24 24">
                     <path
@@ -52,7 +47,6 @@
             <a class="lang-link active" href="#" onclick="changeLang ('ru')" >Рус</a>
             <a class="lang-link" href="#" onclick="changeLang ('kg')" >Кырг</a>
             <a class="lang-link" href="#" onclick="changeLang ('en')" >Eng</a>
-            <a class="login-btn" href="#">Войти</a>
         </div>
     </header>
 
@@ -73,23 +67,30 @@
 </div>
 
 <div class="btn-pack-x" style="margin-bottom: 50px;">
-<button class="btn-alpha">О ФИЛЬМЕ</button>
+<button onclick="showInfo()">О фильме</button>
+
+<div id="info">
+<h3>Махабатым</h3>
+<p><b>Год:</b> 2026</p>
+<p><b>Режиссер:</b> Өмүралиев Мирлан, Эркинов Темирлан</p>
+<p><b>Жанр:</b>комедия</p>
+<p><b>Длительность:</b> 1ч 45мин</p>
+
+<p>
+Учёные разработали технологию, позволяющую переносить человеческое <br>
+сознание в реалистичных роботизированных животных. Мейбл получает <br>
+доступ к технологии и переносится в тело робота-бобра, чтобы <br>
+исследовать животный мир.
+</p>
+
+<button onclick="closeInfo()">X</button>
+
+</div>
 <a href="https://youtu.be/1mDt652C6Jw?si=u-RvkjxP49eEjMak"><button class="btn-beta" data-ru="ТРЕЙЛЕР" data-kg="ТРЕЙЛЕР" data-en="TRAILER">▶  ТРЕЙЛЕР</button></a>
 </div>
 </div>
 </div>
 </section>
-
-    <div id="filmInfo" class="film-info-overlay">
-        <div class="film-info-box">
-            <span id="closeInfo" class="close-info" aria-label="Закрыть">×</span>
-            <h3>Махабатым</h3>
-            <p><b>Год:</b> 2026</p>
-            <p><b>Жанр:</b>комедия</p>
-            <p><b>Длительность:</b> 1ч 45мин</p>
-            <p>Учёные разработали технологию, позволяющую переносить человеческое сознание в реалистичных роботизированных животных. Мейбл получает доступ к технологии и переносится в тело робота-бобра, чтобы исследовать животный мир.</p>
-        </div>
-    </div>
 </div>
 
    
@@ -199,3 +200,13 @@ the complex relationship between a daughter-in-law and mother-in-law.">
    <script src="../js/script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
