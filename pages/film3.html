@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
@@ -21,7 +21,7 @@
 </a>
 
         <nav class="menu">
-            <a class="menu-item menu-imax" href="#">IMAX</a><a class="menu-item" href="./film.html">
+            <a class="menu-item" href="./film.html">
                 <svg viewBox="0 0 24 24">
                     <path
                         d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z" />
@@ -47,7 +47,6 @@
             <a class="lang-link active" href="#" onclick="changeLang ('ru')" >Рус</a>
             <a class="lang-link" href="#" onclick="changeLang ('kg')" >Кырг</a>
             <a class="lang-link" href="#" onclick="changeLang ('en')" >Eng</a>
-
         </div>
     </header>
 
@@ -69,23 +68,27 @@
                 </div>
 
                 <div class="btn-pack-x" style="margin-bottom: 50px;">
-            <button class="btn-alpha">О ФИЛЬМЕ</button>
+            <button onclick="showInfo()">О фильме</button>
+
+<div id="info">
+<h3>Ограбление в Лос-Анджелесе</h3>
+<p><b>Год:</b> 2026</p>
+<p><b>Режиссер:</b>Барт Лэйтон</p>
+<p><b>Жанр:</b>триллер, драма, криминал</p>
+<p><b>Длительность:</b>2 ч 15 мин</p>
+
+<p>
+Дерзкие ограбления неуловимого вора Дэвиса вдоль знаменитого шоссе 101 поставили полицию в тупик. <br> Планируя последнее дело, которое должно стать «ударом всей жизни», <br> он сталкивается с разочаровавшимся страховым брокером Шэрон, переживающей собственный переломный момент. <br> Неожиданное сотрудничество между ними привлекает внимание настойчивого детектива Лу, <br> который стремится раскрыть дело любой ценой, повышая ставки до предела.
+</p>
+
+<button onclick="closeInfo()">X</button>
+
+</div>
                     <button class="btn-beta" data-ru="ТРЕЙЛЕР" data-kg="ТРЕЙЛЕР" data-en="TRAILER">▶ ТРЕЙЛЕР</button>
                 </div>
             </div>
         </div>
     </section>
-
-    <div id="filmInfo" class="film-info-overlay">
-        <div class="film-info-box">
-            <span id="closeInfo" class="close-info" aria-label="Закрыть">×</span>
-            <h3 data-ru="Ограбление в Лос-Анджелесе" data-kg="Лос-Анджелесте уурдоо" data-en="Robbery in Los Angeles">Ограбление в Лос-Анджелесе</h3>
-            <p><b data-ru="Год:" data-kg="Жыл:" data-en="Year:">Год:</b> 2026</p>
-            <p><b data-ru="Жанр:" data-kg="Жанр:" data-en="Genre:">Жанр:</b>триллер, драма, криминал</p>
-            <p><b data-ru="Длительность:" data-kg="Узундук:" data-en="Duration:">Длительность:</b>2 ч 15 мин</p>
-            <p data-ru="Дерзкие ограбления неуловимого вора Дэвиса вдоль знаменитого шоссе 101 поставили полицию в тупик. Планируя последнее дело, которое должно стать «ударом всей жизни», он сталкивается с разочаровавшимся страховым брокером Шэрон, переживающей собственный переломный момент. Неожиданное сотрудничество между ними привлекает внимание настойчивого детектива Лу, который стремится раскрыть дело любой ценой, повышая ставки до предела." data-kg="Дэвистин кармалгыс уурунун 101-шоссе боюнча батыраак уурдоолору полицияны такырга койду. «Жашоонун бардык соккусун» болуш керек акыркы ишти пландаштырып жатып, ал өзүнүн бурулуш мезгилин баштан кечирип жаткан нааразы камсыздандыруу брокери Шэрон менен жолугат. Алардын күтүүсүз кызматташтыгы катуу детектив Лунун көңүлүн бурат, ал ишти ар кандай баада ачууга умтулат, ставкаларды чектөөгө жеткирет." data-en="The daring robberies of the elusive thief Davis along the famous Highway 101 have baffled the police. Planning the last job that should be the 'hit of a lifetime', he encounters the disillusioned insurance broker Sharon, going through her own turning point. Their unexpected collaboration attracts the attention of the persistent detective Lou, who seeks to solve the case at any cost, raising the stakes to the limit.">Дерзкие ограбления неуловимого вора Дэвиса вдоль знаменитого шоссе 101 поставили полицию в тупик. Планируя последнее дело, которое должно стать «ударом всей жизни», он сталкивается с разочаровавшимся страховым брокером Шэрон, переживающей собственный переломный момент. Неожиданное сотрудничество между ними привлекает внимание настойчивого детектива Лу, который стремится раскрыть дело любой ценой, повышая ставки до предела.</p>
-        </div>
-    </div>
 
 </div>
 <div class="seances">
@@ -146,8 +149,6 @@
    <script src="../js/script.js"></script>
 </body>
 </html>
-
-
 
 
 

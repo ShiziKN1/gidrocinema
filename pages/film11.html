@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
@@ -9,6 +9,7 @@
 <title>Рай под ногами матерей</title>
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/film11.css">
+
 </head>
 <body class="body-3">
 
@@ -24,7 +25,7 @@
 </a>
 
         <nav class="menu">
-            <a class="menu-item menu-imax" href="#">IMAX</a><a class="menu-item" href="./film.html">
+            <a class="menu-item" href="./film.html">
                 <svg viewBox="0 0 24 24">
                     <path
                         d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z" />
@@ -50,7 +51,6 @@
             <a class="lang-link active" href="#" onclick="changeLang ('ru')" >Рус</a>
             <a class="lang-link" href="#" onclick="changeLang ('kg')" >Кырг</a>
             <a class="lang-link" href="#" onclick="changeLang ('en')" >Eng</a>
-
         </div>
     </header>
 
@@ -71,23 +71,27 @@
 </div>
 
 <div class="btn-pack-x" style="margin-bottom: 50px;">
-<button class="btn-alpha">О ФИЛЬМЕ</button>
+<button onclick="showInfo()">О фильме</button>
+
+<div id="info">
+<h3>Рай 2: письмо моей матери</h3>
+<p><b>Год:</b> 2026</p>
+<p><b>Режиссер:</b> Өмүралиев Мирлан, Эркинов Темирлан</p>
+<p><b>Жанр:</b>Драма</p>
+<p><b>Длительность:</b>101минута</p>
+
+<p>
+«Бейиш 2: Апама кат» продолжает драматическую и трогательную историю, <br> начатую в первой части, углубляя и расширяя её смысловое содержание. <br> В центре повествования по-прежнему остаются материнская любовь, <br> духовные ценности и человеческая благодарность, <br> которые проходят через судьбы героев красной нитью.
+</p>
+
+<button onclick="closeInfo()">X</button>
+
+</div>
 <a href="https://youtu.be/XD5Y0FCHzn8?si=HHJmPj4EBoOXpngp"><button class="btn-beta">▶  ТРЕЙЛЕР</button></a>
 </div>
 </div>
 </div>
 </section>
-
-    <div id="filmInfo" class="film-info-overlay">
-        <div class="film-info-box">
-            <span id="closeInfo" class="close-info" aria-label="Закрыть">×</span>
-            <h3>Рай 2: письмо моей матери</h3>
-            <p><b>Год:</b> 2026</p>
-            <p><b>Жанр:</b>Драма</p>
-            <p><b>Длительность:</b>101минута</p>
-            <p>«Бейиш 2: Апама кат» продолжает драматическую и трогательную историю, начатую в первой части, углубляя и расширяя её смысловое содержание. В центре повествования по-прежнему остаются материнская любовь, духовные ценности и человеческая благодарность, которые проходят через судьбы героев красной нитью.</p>
-        </div>
-    </div>
 </div>
 
 <div class="seances">
@@ -148,8 +152,6 @@
 <script src="../js/script.js"></script>
 </body>
 </html>
-
-
 
 
 

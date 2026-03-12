@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
@@ -20,7 +20,7 @@
 </a>
 
         <nav class="menu">
-            <a class="menu-item menu-imax" href="#">IMAX</a><a class="menu-item" href="./film.html">
+            <a class="menu-item" href="./film.html">
                 <svg viewBox="0 0 24 24">
                     <path
                         d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z" />
@@ -46,7 +46,6 @@
             <a class="lang-link active" href="#" onclick="changeLang ('ru')" >Рус</a>
             <a class="lang-link" href="#" onclick="changeLang ('kg')" >Кырг</a>
             <a class="lang-link" href="#" onclick="changeLang ('en')" >Eng</a>
-
         </div>
     </header>
 
@@ -67,24 +66,27 @@
 </div>
 
 <div class="btn-pack-x" style="margin-bottom: 50px;">
-<button class="btn-alpha">О ФИЛЬМЕ</button>
+<button onclick="showInfo()">О фильме</button>
+
+<div id="info">
+<h3>Аян</h3>
+<p><b>Год:</b> 2026</p>
+<p><b>Режиссер:</b>Ырыскелди Артелбеков</p>
+<p><b>Жанр:</b>Психологическая драма</p>
+<p><b>Длительность:</b>1 час 17 минут</p>
+
+<p>
+«Аян» — фильм о женщине, которая чувствует себя потерянной. <br> В семье все молчат, и она остаётся одна со своими чувствами.  <br>С виду у неё всё хорошо, но внутри ей пусто и тяжело.  <br>Одиночество в браке и невысказанные эмоции постепенно приводят её к депрессии.
+</p>
+
+<button onclick="closeInfo()">X</button>
+
+</div>
  <button class="btn-beta" data-ru="ТРЕЙЛЕР" data-kg="ТРЕЙЛЕР" data-en="TRAILER">▶ ТРЕЙЛЕР</button>
 </div>
 </div>
 </div>
 </section>
-
-    <div id="filmInfo" class="film-info-overlay">
-        <div class="film-info-box">
-            <span id="closeInfo" class="close-info" aria-label="Закрыть">×</span>
-            <h3>Аян</h3>
-            <p><b>Год:</b> 2026</p>
-            <p><b>Жанр:</b>Психологическая драма</p>
-            <p><b>Длительность:</b>1 час 17 минут</p>
-            <p>«Аян» — фильм о женщине, которая чувствует себя потерянной. В семье все молчат, и она остаётся одна со своими чувствами. С виду у неё всё хорошо, но внутри ей пусто и тяжело. Одиночество в браке и невысказанные эмоции постепенно приводят её к депрессии.</p>
-        </div>
-    </div>
-
 </div>
 
 <div class="seances">
@@ -144,8 +146,6 @@
    <script src="../js/script.js"></script>
 </body>
 </html>
-
-
 
 
 
