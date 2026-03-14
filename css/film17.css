@@ -19,7 +19,11 @@
  }
  
 
- 
+ .infocss{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
 /* модалка в style.css */
 

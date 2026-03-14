@@ -18,7 +18,11 @@
      width: 1500px;
  }
 
-
+.infocss{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
  
 
 /* модалка в style.css */
