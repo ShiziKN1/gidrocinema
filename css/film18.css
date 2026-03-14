@@ -212,6 +212,12 @@ button{
 .btn-pack-x{
     display:flex;
     gap:15px;
+   
+}
+.infocss{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .btn-alpha,
@@ -302,6 +308,9 @@ button{
   color: white;
   text-decoration: none;
 }
+
+
+
 
 
 @media(max-width:768px){
